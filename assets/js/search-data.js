@@ -39,12 +39,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-dynamic-sector-rotation-with-machine-learning",
-          title: 'Dynamic Sector Rotation with Machine Learning',
-          description: "The approach uses both supervised and unsupervised learning models to make informed allocation decisions.",
-          section: "Projects",handler: () => {
-              window.location.href = "/ai-folio/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
+          section: "News",},{id: "projects-project-3-with-very-long-name",
           title: 'project 3 with very long name',
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
@@ -54,6 +49,11 @@ ninja.data = [{
           description: "another without an image",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/4_project/";
+            },},{id: "projects-dynamic-sector-rotation-with-machine-learning",
+          title: 'Dynamic Sector Rotation with Machine Learning',
+          description: "The approach uses both supervised and unsupervised learning models to make informed allocation decisions.",
+          section: "Projects",handler: () => {
+              window.location.href = "/ai-folio/projects/DSRML/";
             },},{id: "projects-worldquant-international-quant-championship",
           title: 'WorldQuant International Quant Championship',
           description: "Creating alpha strategies for portfolio construction",
