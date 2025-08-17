@@ -64,11 +64,11 @@ Below are a few of my alphas . The graphs show the alpha’s profit over a 5-yea
 * Parameters - USA, TOP3000, subindustry-neutral, Decay 4, Delay 1, Truncation 0.20, Pasteurization On
 * Idea - Compare recent volume  to the year average  to spot attention spikes.Go long stocks with a recent volume surge and short those with unusually low recent volume.
 * Performance - Sharpe: 1.73 | Fitness: 1.08 | Return: 7.88% | Drawdown: 4.97% |Turnover: 20.34% | Margin: 7.75‰
-* Notes - Subindustry neutralization keeps it a stock-selection bet, not a sector flow bet and consistent uptrend while Pullbacks are shallow and short.
+* Notes - Subindustry neutralization keeps it a stock selection bet, not a sector flow bet and consistent uptrend while pullbacks are shallow and short.
 
 <div class="row">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/pnl2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/pnl2.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -77,7 +77,7 @@ Below are a few of my alphas . The graphs show the alpha’s profit over a 5-yea
 
 (3) Short-Term Volume Surge 
 
-`sqrt(rank(ts_mean(volume,5)/ts_mean(volume,240)))`
+`ts_rank(operating_income/cap,250)`
 
 * Parameters - USA, TOP3000, subindustry-neutral, Decay 4, Delay 1, Truncation 0.20, Pasteurization On
 * Idea - Compare recent volume  to the year average  to spot attention spikes.Go long stocks with a recent volume surge and short those with unusually low recent volume.
@@ -86,7 +86,7 @@ Below are a few of my alphas . The graphs show the alpha’s profit over a 5-yea
 
 <div class="row">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/pnl2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/pnl3.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
