@@ -44,9 +44,9 @@ ninja.data = [{
           description: "Creating alpha strategies for portfolio construction",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-dynamic-sector-rotation-with-machine-learning",
+          title: 'Dynamic Sector Rotation with Machine Learning',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
