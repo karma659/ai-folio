@@ -9,9 +9,6 @@ category: work
 giscus_comments: false
 ---
 
-
-## Executive Summary
-
 This report presents the implementation and performance evaluation of a dynamic sector rotation strategy applied to U.S. equity sector data. The strategy dynamically allocates capital across market sectors to maximize risk-adjusted returns, integrating machine learning (LightGBM), dimensionality reduction (PCA), clustering, and risk management techniques to capture persistent sector rotation patterns while maintaining robustness to market regime changes.
 The back test covers the period 2014–2019 for in-sample (IS) testing and 2020–2025 for out-of-sample (OOS) validation, using sector ETF returns and the SPY ETF as a benchmark.
 
