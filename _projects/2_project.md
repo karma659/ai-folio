@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dynamic Sector Rotation with Machine Learning
-description: 
+description: The approach uses both supervised and unsupervised learning models to make informed allocation decisions.
 
 img: assets/img/lgbm.jpeg
 importance: 2
