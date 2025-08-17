@@ -2,7 +2,7 @@
 layout: page
 title: WorldQuant International Quant Championship
 description: Creating alpha strategies for portfolio construction
-img: assets/img/IQC_logo.jpeg
+img: assets/img/IQC_logo.webp
 importance: 1
 category: work
 related_publications: true
