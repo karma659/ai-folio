@@ -85,7 +85,7 @@ To address potential multicollinearity among features and to capture the most si
 
 We applied K-Means clustering to the two PCA components to group ETFs with similar characteristics. The optimal number of clusters (k=4) was selected using the elbow method. Cluster assignments were later used as categorical features in the predictive model, representing different market regimes.
 
-<div class="col-sm-4 mt-3 mt-md-0">
+<div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/k3.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
     
@@ -108,7 +108,7 @@ The performance of the proposed sector rotation strategy was evaluated across bo
 Despite the drop in Sharpe ratio during OOS, the LightGBM-based market-timing approach outperformed the Pairs Portfolio benchmark in OOS returns (8.76% vs. 7.35%) while keeping maximum drawdowns at a moderate level (19.64% vs. 16.11%).
 
   
-<div class="col-sm-4 mt-3 mt-md-0">
+<div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/k5.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 
