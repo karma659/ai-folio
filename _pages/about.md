@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: Akash_image.jpeg
+  image: Akash.jpeg
   image_circular: false # crops the image to make it circular
   
 
