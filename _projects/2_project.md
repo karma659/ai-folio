@@ -25,12 +25,16 @@ From a practical perspective, this study confirms the feasibility of combining m
 | **OOS-Pairs Portfolio**| 7.35%             | 10.00%            | 0.74         | 16.11%           |
 
 
+
+
+
 ## Introduction
 
-        	The financial markets are characterized by continuous shifts in economic cycles, investor sentiment, and sector performance. These dynamics create opportunities for sector rotation strategies, where capital is reallocated among different industries to capture relative strength while mitigating downside risk. Traditionally, such strategies have relied on macroeconomic indicators, moving averages, or momentum signals. However, the increasing availability of high-frequency, multi-dimensional data and advancements in machine learning have opened the door to more adaptive and data-driven approaches.
+The financial markets are characterized by continuous shifts in economic cycles, investor sentiment, and sector performance. These dynamics create opportunities for sector rotation strategies, where capital is reallocated among different industries to capture relative strength while mitigating downside risk. Traditionally, such strategies have relied on macroeconomic indicators, moving averages, or momentum signals. However, the increasing availability of high-frequency, multi-dimensional data and advancements in machine learning have opened the door to more adaptive and data-driven approaches.
 This project explores the application of Light Gradient Boosting Machine (LightGBM), a powerful gradient-boosting framework, in developing a Dynamic Sector Rotation Strategy. By combining dimensionality reduction techniques (PCA), unsupervised learning (clustering), and predictive modeling, the strategy aims to identify optimal sector allocations that outperform the market benchmark. In particular, the model forecasts short-term sector performance rankings and adjusts portfolio weights accordingly, incorporating risk management constraints to enhance risk-adjusted returns.
 
 The motivation behind this study lies in bridging the gap between academic research and practical portfolio management. While machine learning-based asset allocation has shown promise in back testing, many approaches suffer from overfitting, lack of robustness in out-of-sample (OOS) periods, or poor adaptability to regime shifts. Our methodology addresses these issues by segmenting the dataset into in-sample (IS) and out-of-sample (OOS) periods for proper validation, applying feature engineering to extract meaningful signals from sector ETF price data, incorporating clustering methods to group similar market conditions and tailor predictions accordingly, and enforcing portfolio constraints to control volatility and drawdown.
+
 
 ## Data Description
 
@@ -84,15 +88,17 @@ We applied K-Means clustering to the two PCA components to group ETFs with simil
 
 <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/k3.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+</div>
     
+<div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/k4.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/k5.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
+    
+</div>
 
 To predict the next month’s return direction (up = 1, down = 0), we trained a Light Gradient Boosting Machine (LightGBM) classifier. Inputs included PCA components, cluster labels, and lagged return features. The model was trained on the IS dataset and evaluated on the OOS dataset to assess predictive performance. Based on the LightGBM predictions, we constructed portfolios and measured performance across the IS and OOS periods. Evaluation metrics included cumulative return, annualized return, volatility, Sharpe ratio, and maximum drawdown (MDD). Performance was benchmarked against SPY to assess the strategy’s excess return potential.
 
@@ -103,15 +109,15 @@ The performance of the proposed sector rotation strategy was evaluated across bo
 Despite the drop in Sharpe ratio during OOS, the LightGBM-based market-timing approach outperformed the Pairs Portfolio benchmark in OOS returns (8.76% vs. 7.35%) while keeping maximum drawdowns at a moderate level (19.64% vs. 16.11%).
 
   
-    <div class="col-sm mt-3 mt-md-0">
+<div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/k5..png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+</div>
 
 Moreover, when compared directly to SPY in the OOS period, the strategy’s excess return potential is showing more stable performance despite SPY’s strong upward trend.
 
-  <div class="col-sm mt-3 mt-md-0">
+<div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/k7..png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+</div>
 
 Final Performance Table
 
