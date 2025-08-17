@@ -30,7 +30,7 @@ Before that, I worked as a Software Engineer at Goprac, where I automated system
 
 Currently, I’m pursuing my MS in Finance-FinTech at Baruch College (Zicklin School of Business), where I combine finance and coding to solve real-world investment problems 💡.
 
-I love applying code to finance and teaching others about creating trading strategies. Check out my [projects](/projects) page for writeups on creating trading strategies and becoming a national finalist in IQC 🚀.
+I love applying code to finance and teaching others about creating trading strategies. Check out my [projects](/projects/) page for writeups on creating trading strategies and becoming a national finalist in IQC 🚀.
 
 Please feel free to contact me on [LinkedIn](https://www.linkedin.com/in/karmakarakash659/) or via [email](mailto:glazar.karmakarakash659@gmail.com) if you have any questions about my work.
 
