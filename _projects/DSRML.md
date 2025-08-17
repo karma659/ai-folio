@@ -15,13 +15,14 @@ The back test covers the period 2014â€“2019 for in-sample (IS) testing and 2020â
 ## Key performance results
 The results indicate that while the strategy maintained solid performance during IS, the OOS period showed increased volatility and a decline in the Sharpe ratio, suggesting sensitivity to shifting market regimes. Nonetheless, the LightGBM-based market-timing approach demonstrated resilience, outperforming the Pairs Portfolio in OOS returns while keeping drawdowns at moderate levels.
 
-
+`
 |                        | Annualized Return | Annual Volatility | Sharpe Ratio | Maximum Drawdown |
 |------------------------|------------------:|------------------:|-------------:|-----------------:|
 | **In-Sample (IS)**     | 8.91%             | 7.96%             | 1.12         | 8.68%            |
 | **Out of Sample (OOS)**| 8.76%             | 12.31%            | 0.71         | 19.64%           |
 | **OOS-SPY**            | 11.25%            | 10.00%            | 1.12         | 15.40%           |
 | **OOS-Pairs Portfolio**| 7.35%             | 10.00%            | 0.74         | 16.11%           |
+`
 
 From a practical perspective, this study confirms the feasibility of combining machine learning with sector rotation for active portfolio management. It also highlights opportunities for further refinement through enhanced feature engineering, incorporation of transaction cost modeling, and regime detection mechanisms to strengthen real-world applicability.
 
