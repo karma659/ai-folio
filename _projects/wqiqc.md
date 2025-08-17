@@ -50,7 +50,7 @@ Below are a few of my alphas . The graphs show the alpha’s profit over a 5-yea
 * Notes - Long tenor (270D) keeps the signal stable while shorter tenors were noisier.Smooth climb to >$10M PnL from 2018–2023 with strongest gains during high-volume regimes.
 
 <div class="row justify-content-center">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/pnl1.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -67,7 +67,7 @@ Below are a few of my alphas . The graphs show the alpha’s profit over a 5-yea
 * Notes - Subindustry neutralization keeps it a stock selection bet, not a sector flow bet and consistent uptrend while pullbacks are shallow and short.
 
 <div class="row justify-content-center">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/pnl2.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -85,7 +85,7 @@ Below are a few of my alphas . The graphs show the alpha’s profit over a 5-yea
 * Notes - This signal mixes value with fundamental momentum, so it’s worth testing alternative windows (126/504,1056) or EBIT/EV variants for robustness.
 
 <div class="row justify-content-center">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/pnl3.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
