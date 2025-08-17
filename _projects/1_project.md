@@ -9,9 +9,9 @@ related_publications: true
 ---
 
 
-From late April through summer 2025, WorldQuant is running its annual International Quant Championship.
+From late April through summer 2025, [WorldQuant](https://www.worldquant.com/) is running its annual [International Quant Championship](https://www.worldquant.com/brain/iqc/).
 
-The competition runs on WorldQuant’s 🧠 BRAIN platform, which hosts over 120,000 data types, hundreds of operator functions, and a custom backtesting simulator to test alpha ideas.
+The competition runs on WorldQuant’s 🧠 [BRAIN platform](https://www.worldquant.com/brain/), which hosts over 120,000 data types, hundreds of operator functions, and a custom backtesting simulator to test alpha ideas.
 
 I’m happy to share that I placed 14/76,854 in the world (top 0.01%) and 1/2889 (top 0.01%) in the USA during the 1st round. In stage 2, I was among the top 8 teams in US and placed 3rd position. The third round took the best candidates from each region, so unfortunately I did not qualify to advance. Go team USA 🇺🇸!
 
@@ -90,9 +90,8 @@ Below are a few of my alphas . The graphs show the alpha’s profit over a 5-yea
     </div>
 </div>
 
-Overall, I found that price reversion strategies worked especially well for this competition. All of the above alphas incorporated some form of price reversion, either directly in alphas 1 and 2 or as part of a larger strategy in alpha 4. Reversion also appears in alpha 5 as a signal within social media buzz data.
+Overall, I found that options driven alphas especially those based on implied volatility outperformed my price mean reversion ideas. Skew and term structure signals, plus simple volume-gated IV spreads, delivered steadier risk-adjusted returns and were less tied to broad market direction than pure price reversion.
 
-In addition to price reversion, I also found success in leveraging the COVID pandemic’s effects on the market. Many alphas that performed OK pre-COVID shot to the moon 🚀 starting around March 2020. COVID clearly kicked off a new wave of trading activity that rewarded alphas based on news and social media buzz. Alphas like 4 and 5 performed especially well starting around 2020.
 
 ## Conclusion
 
