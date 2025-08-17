@@ -22,7 +22,7 @@ Alphas are individually scored with a secret formula that weights their Sharpe r
 
 Scores from each submitted alpha are aggregated such that baskets of alphas with strong and uncorrelated returns are highly rewarded. All scores are based on a 5-year backtest ranging from 2018 to 2023.
 
-Each stage in the competition pares down the field to fewer and fewer contestants. The first stage hosted over 76,854 participants. Cutoffs for the second round eliminated all but the top 100 contestants from each country/geograpic region and among the top 8 teams across each country/region , National Finals were conducted. Upcoming is the third round which pits the best contestants from each country/region against one another. The total prize money for the competition is $100k💰 distributed among the top 3 winners in Regional finalist and Global Finalist.
+Each stage in the competition pares down the field to fewer and fewer contestants. The first stage hosted over 76,854 participants. Cutoffs for the second round eliminated all but the top 100 contestants from each country/geograpic region and among the top 8 teams across each country/region , National Finals were conducted. Upcoming is the third round which pits the best contestants from each country/region against one another. The total prize money for the competition is $100k💰 distributed among the top 3 winners in Regional and Global Finalist.
 
 ## Generating alphas
 WorldQuant generously hosted Q and A sessions with current quant researchers. I got the chance to interact with researchers from India, Singapore and China as they taught about topics from alpha neutralization (unbiasing alphas across different industries or sectors) to vector data fields (which provide more than 1 data point per day).
@@ -44,13 +44,13 @@ Below are a few of my alphas . The graphs show the alpha’s profit over a 5-yea
 
 `trade_when(ts_mean(volume, 270) / ts_mean(volume, 30) < 1, (implied_volatility_call_270 - implied_volatility_put_270), -1)`
 
-* Parameters - USA, TOP3000, market-neutral, Decay 4, Delay 0, Truncation 0.08, Pasteurization On
+* Parameters - USA TOP3000, market neutralization, Decay 4, Delay 0, Truncation 0.08, Pasteurization On
 * Idea - Trade only when recent volume  greater than long-term. If Call IV > Put IV, go long else if Put IV > Call IV, go short.
 * Performance - Sharpe: 2.31 | Fitness: 2.66 | Return: 22.86% | Drawdown: 8.00% |Turnover: 17.22% | Margin: 26.56‰
 * Notes - Long tenor (270D) keeps the signal stable while shorter tenors were noisier.Smooth climb to >$10M PnL from 2018–2023 with strongest gains during high-volume regimes.
 
 <div class="row">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/pnl1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -61,13 +61,13 @@ Below are a few of my alphas . The graphs show the alpha’s profit over a 5-yea
 
 `sqrt(rank(ts_mean(volume,5)/ts_mean(volume,240)))`
 
-* Parameters - USA, TOP3000, subindustry-neutral, Decay 4, Delay 1, Truncation 0.20, Pasteurization On
+* Parameters - USA TOP3000, subindustry neutralization, Decay 4, Delay 1, Truncation 0.20, Pasteurization On
 * Idea - Compare recent volume  to the year average  to spot attention spikes.Go long stocks with a recent volume surge and short those with unusually low recent volume.
 * Performance - Sharpe: 1.73 | Fitness: 1.08 | Return: 7.88% | Drawdown: 4.97% |Turnover: 20.34% | Margin: 7.75‰
 * Notes - Subindustry neutralization keeps it a stock selection bet, not a sector flow bet and consistent uptrend while pullbacks are shallow and short.
 
 <div class="row">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/pnl2.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -79,13 +79,13 @@ Below are a few of my alphas . The graphs show the alpha’s profit over a 5-yea
 
 `ts_rank(operating_income/cap,250)`
 
-* Parameters - USA, TOP200, subindustry-neutral, Decay 0, Delay 1, Truncation 1, Pasteurization On
+* Parameters - USA TOP200, subindustry neutralization, Decay 0, Delay 1, Truncation 1, Pasteurization On
 * Idea - Buy cheap stocks vs their own history and sell expensive ones.
 * Performance - Sharpe: 1.60 | Fitness: 1.54 | Return: 14.14% | Drawdown: 8.14% |Turnover: 15.18% | Margin: 18.63‰
 * Notes - This signal mixes value with fundamental momentum, so it’s worth testing alternative windows (126/504,1056) or EBIT/EV variants for robustness.
 
 <div class="row">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/pnl3.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -100,4 +100,3 @@ Overall, I found that options driven alphas especially those based on implied vo
 I had a great time learning about backtesting, alpha generation, and data exploration from some of the best quant researchers in the world. The tutorials, seminars, and recommended papers complemented each other very well.
 
 I would like to thank WorldQuant again for putting together such a well-run and exciting event. I’m looking forward to another competition next year!
-
