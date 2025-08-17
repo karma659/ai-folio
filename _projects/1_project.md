@@ -49,7 +49,7 @@ Below are a few of my alphas . The graphs show the alpha’s profit over a 5-yea
 * Performance - Sharpe: 2.31 | Fitness: 2.66 | Return: 22.86% | Drawdown: 8.00% |Turnover: 17.22% | Margin: 26.56‰
 * Notes - Long tenor (270D) keeps the signal stable while shorter tenors were noisier.Smooth climb to >$10M PnL from 2018–2023 with strongest gains during high-volume regimes.
 
-<div class="row">
+<div class="row justify-content-center">
     <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/pnl1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
@@ -66,7 +66,7 @@ Below are a few of my alphas . The graphs show the alpha’s profit over a 5-yea
 * Performance - Sharpe: 1.73 | Fitness: 1.08 | Return: 7.88% | Drawdown: 4.97% |Turnover: 20.34% | Margin: 7.75‰
 * Notes - Subindustry neutralization keeps it a stock selection bet, not a sector flow bet and consistent uptrend while pullbacks are shallow and short.
 
-<div class="row">
+<div class="row justify-content-center">
     <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/pnl2.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
@@ -75,20 +75,30 @@ Below are a few of my alphas . The graphs show the alpha’s profit over a 5-yea
 
 
 
-(3) Short-Term Volume Surge 
+(3) Operating Income Yield
 
 `ts_rank(operating_income/cap,250)`
 
-* Parameters - USA, TOP3000, subindustry-neutral, Decay 4, Delay 1, Truncation 0.20, Pasteurization On
-* Idea - Compare recent volume  to the year average  to spot attention spikes.Go long stocks with a recent volume surge and short those with unusually low recent volume.
-* Performance - Sharpe: 1.73 | Fitness: 1.08 | Return: 7.88% | Drawdown: 4.97% |Turnover: 20.34% | Margin: 7.75‰
-* Notes - Subindustry neutralization keeps it a stock-selection bet, not a sector flow bet and 
+* Parameters - USA, TOP200, subindustry-neutral, Decay 0, Delay 1, Truncation 1, Pasteurization On
+* Idea - Buy cheap stocks vs their own history and sell expensive ones.
+* Performance - Sharpe: 1.60 | Fitness: 1.54 | Return: 14.14% | Drawdown: 8.14% |Turnover: 15.18% | Margin: 18.63‰
+* Notes - This signal mixes value with fundamental momentum, so it’s worth testing alternative windows (126/504,1056) or EBIT/EV variants for robustness.
 
-<div class="row">
+<div class="row justify-content-center">
     <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/pnl3.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
+Overall, I found that price reversion strategies worked especially well for this competition. All of the above alphas incorporated some form of price reversion, either directly in alphas 1 and 2 or as part of a larger strategy in alpha 4. Reversion also appears in alpha 5 as a signal within social media buzz data.
 
+In addition to price reversion, I also found success in leveraging the COVID pandemic’s effects on the market. Many alphas that performed OK pre-COVID shot to the moon 🚀 starting around March 2020. COVID clearly kicked off a new wave of trading activity that rewarded alphas based on news and social media buzz. Alphas like 4 and 5 performed especially well starting around 2020.
+
+## Conclusion
+
+🎉 After months of researching and testing alphas, attending seminars, and reading articles, I am happy to have finished the 2nd round in the top 3 of the USA. I’ll certainly be following along to cheer on the USA team as it progresses into the 3rd round!
+
+I had a great time learning about backtesting, alpha generation, and data exploration from some of the best quant researchers in the world. The tutorials, seminars, and recommended papers complemented each other very well.
+
+I would like to thank WorldQuant again for putting together such a well-run and exciting event. I’m looking forward to another competition next year!
 
