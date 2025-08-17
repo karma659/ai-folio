@@ -14,7 +14,6 @@ The back test covers the period 2014–2019 for in-sample (IS) testing and 2020�
 
 ## Key performance results
 The results indicate that while the strategy maintained solid performance during IS, the OOS period showed increased volatility and a decline in the Sharpe ratio, suggesting sensitivity to shifting market regimes. Nonetheless, the LightGBM-based market-timing approach demonstrated resilience, outperforming the Pairs Portfolio in OOS returns while keeping drawdowns at moderate levels.
-From a practical perspective, this study confirms the feasibility of combining machine learning with sector rotation for active portfolio management. It also highlights opportunities for further refinement through enhanced feature engineering, incorporation of transaction cost modeling, and regime detection mechanisms to strengthen real-world applicability.
 
 
 |                        | Annualized Return | Annual Volatility | Sharpe Ratio | Maximum Drawdown |
@@ -24,8 +23,7 @@ From a practical perspective, this study confirms the feasibility of combining m
 | **OOS-SPY**            | 11.25%            | 10.00%            | 1.12         | 15.40%           |
 | **OOS-Pairs Portfolio**| 7.35%             | 10.00%            | 0.74         | 16.11%           |
 
-
-
+From a practical perspective, this study confirms the feasibility of combining machine learning with sector rotation for active portfolio management. It also highlights opportunities for further refinement through enhanced feature engineering, incorporation of transaction cost modeling, and regime detection mechanisms to strengthen real-world applicability.
 
 
 ## Introduction
@@ -86,7 +84,7 @@ To address potential multicollinearity among features and to capture the most si
 
 We applied K-Means clustering to the two PCA components to group ETFs with similar characteristics. The optimal number of clusters (k=4) was selected using the elbow method. Cluster assignments were later used as categorical features in the predictive model, representing different market regimes.
 
-<div class="col-sm mt-3 mt-md-0">
+<div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/k3.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
     
@@ -109,14 +107,14 @@ The performance of the proposed sector rotation strategy was evaluated across bo
 Despite the drop in Sharpe ratio during OOS, the LightGBM-based market-timing approach outperformed the Pairs Portfolio benchmark in OOS returns (8.76% vs. 7.35%) while keeping maximum drawdowns at a moderate level (19.64% vs. 16.11%).
 
   
-<div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/k5..png" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/k5.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 
 Moreover, when compared directly to SPY in the OOS period, the strategy’s excess return potential is showing more stable performance despite SPY’s strong upward trend.
 
 <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/k7..png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/k7.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 
 Final Performance Table
