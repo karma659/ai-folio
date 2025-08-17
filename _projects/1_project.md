@@ -40,25 +40,37 @@ For more information about data, operators, and testing parameters, check out th
 
 Below are a few of my alphas . The graphs show the alpha’s profit over a 5-year backtest from 2018 to 2023
 
+(1) Volume-Triggered Volatility Skew 
+`trade_when(ts_mean(volume, 270) / ts_mean(volume, 30) < 1, (implied_volatility_call_270 - implied_volatility_put_270), -1)`
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+* Parameters - USA, TOP3000, market-neutral, Decay 4, Delay 0, Truncation 0.08, Pasteurization On
+* Idea - Trade only when recent volume  greater than long-term. If Call IV > Put IV, go long else if Put IV > Call IV, go short.
+* Performance - Sharpe: 2.31 | Fitness: 2.66 | Return: 22.86% | Drawdown: 8.00% |Turnover: 17.22% | Margin: 26.56‰
+* Notes - Long tenor (270D) keeps the signal stable while shorter tenors were noisier.Smooth climb to >$10M PnL from 2018–2023 with strongest gains during high-volume regimes.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/pnl1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+
+
+
+(2) Volume-Triggered Volatility Skew 
+`trade_when(ts_mean(volume, 270) / ts_mean(volume, 30) < 1, (implied_volatility_call_270 - implied_volatility_put_270), -1)`
+
+* Parameters - USA, TOP3000, market-neutral, Decay 4, Delay 0, Truncation 0.08, Pasteurization On
+* Idea - Trade only when recent volume  greater than long-term. If Call IV > Put IV, go long else if Put IV > Call IV, go short.
+* Performance - Sharpe: 2.31 | Fitness: 2.66 | Return: 22.86% | Drawdown: 8.00% |Turnover: 17.22% | Margin: 26.56‰
+* Notes - Long tenor (270D) keeps the signal stable while shorter tenors were noisier.Smooth climb to >$10M PnL from 2018–2023 with strongest gains during high-volume regimes.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/pnl1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+
 <div class="caption">
     Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
 </div>
