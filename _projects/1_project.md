@@ -41,6 +41,7 @@ For more information about data, operators, and testing parameters, check out th
 Below are a few of my alphas . The graphs show the alpha’s profit over a 5-year backtest from 2018 to 2023
 
 (1) Volume-Triggered Volatility Skew 
+
 `trade_when(ts_mean(volume, 270) / ts_mean(volume, 30) < 1, (implied_volatility_call_270 - implied_volatility_put_270), -1)`
 
 * Parameters - USA, TOP3000, market-neutral, Decay 4, Delay 0, Truncation 0.08, Pasteurization On
@@ -49,72 +50,45 @@ Below are a few of my alphas . The graphs show the alpha’s profit over a 5-yea
 * Notes - Long tenor (270D) keeps the signal stable while shorter tenors were noisier.Smooth climb to >$10M PnL from 2018–2023 with strongest gains during high-volume regimes.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/pnl1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-
-
-(2) Volume-Triggered Volatility Skew 
-`trade_when(ts_mean(volume, 270) / ts_mean(volume, 30) < 1, (implied_volatility_call_270 - implied_volatility_put_270), -1)`
-
-* Parameters - USA, TOP3000, market-neutral, Decay 4, Delay 0, Truncation 0.08, Pasteurization On
-* Idea - Trade only when recent volume  greater than long-term. If Call IV > Put IV, go long else if Put IV > Call IV, go short.
-* Performance - Sharpe: 2.31 | Fitness: 2.66 | Return: 22.86% | Drawdown: 8.00% |Turnover: 17.22% | Margin: 26.56‰
-* Notes - Long tenor (270D) keeps the signal stable while shorter tenors were noisier.Smooth climb to >$10M PnL from 2018–2023 with strongest gains during high-volume regimes.
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/pnl1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/pnl1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+
+
+
+(2) Short-Term Volume Surge 
+
+`sqrt(rank(ts_mean(volume,5)/ts_mean(volume,240)))`
+
+* Parameters - USA, TOP3000, subindustry-neutral, Decay 4, Delay 1, Truncation 0.20, Pasteurization On
+* Idea - Compare recent volume  to the year average  to spot attention spikes.Go long stocks with a recent volume surge and short those with unusually low recent volume.
+* Performance - Sharpe: 1.73 | Fitness: 1.08 | Return: 7.88% | Drawdown: 4.97% |Turnover: 20.34% | Margin: 7.75‰
+* Notes - Subindustry neutralization keeps it a stock-selection bet, not a sector flow bet and consistent uptrend while Pullbacks are shallow and short.
+
+<div class="row">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/pnl2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
 
-{% raw %}
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+
+(3) Short-Term Volume Surge 
+
+`sqrt(rank(ts_mean(volume,5)/ts_mean(volume,240)))`
+
+* Parameters - USA, TOP3000, subindustry-neutral, Decay 4, Delay 1, Truncation 0.20, Pasteurization On
+* Idea - Compare recent volume  to the year average  to spot attention spikes.Go long stocks with a recent volume surge and short those with unusually low recent volume.
+* Performance - Sharpe: 1.73 | Fitness: 1.08 | Return: 7.88% | Drawdown: 4.97% |Turnover: 20.34% | Margin: 7.75‰
+* Notes - Subindustry neutralization keeps it a stock-selection bet, not a sector flow bet and 
+
+<div class="row">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/pnl2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
 
-{% endraw %}
+
+
