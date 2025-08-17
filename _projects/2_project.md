@@ -3,7 +3,7 @@ layout: page
 title: Dynamic Sector Rotation with Machine Learning
 description: 
 
-img: assets/img/lgbm.png
+img: assets/img/lgbm.jpeg
 importance: 2
 category: work
 giscus_comments: false
