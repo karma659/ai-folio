@@ -46,7 +46,7 @@ ninja.data = [{
               window.location.href = "/ai-folio/projects/1_project/";
             },},{id: "projects-dynamic-sector-rotation-with-machine-learning",
           title: 'Dynamic Sector Rotation with Machine Learning',
-          description: "",
+          description: "The approach uses both supervised and unsupervised learning models to make informed allocation decisions.",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
