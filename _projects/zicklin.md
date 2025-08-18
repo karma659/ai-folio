@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Ethical AI case Competiton
-description: Conceptualize an AI startup serving the educational sector while embedding ethical considerations at every level of the business strategy.
+description: Zicklin Case Competition(conceptualize an AI startup)
 img: assets/img/zicklin.jpeg
 importance: 2
 category: work
 giscus_comments: false
+cv_pdf: Zicklin.pdf
 ---
 
 ### The Challenge
@@ -31,7 +32,8 @@ Competing against teams from Baruch, Fordham and Rutgers, our team proudly secur
 
 
 
-See below our presentation slide.
+See below , or click this  [link](../assets/pdf/Akash2025.pdf)  to view our presentation slide.
+
 
 <div style="margin-left: auto;margin-right: auto;">
     <object data="../assets/pdf/Zicklin.pdf" type="application/pdf" width="825px" height="1175px">
