@@ -101,13 +101,3 @@ I had a great time learning about backtesting, alpha generation, and data explor
 
 I would like to thank WorldQuant again for putting together such a well-run and exciting event. I’m looking forward to another competition next year!
 
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/wq1.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/wq2.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    
-</div>
