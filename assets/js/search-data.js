@@ -39,12 +39,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/ai-folio/projects/4_project/";
-            },},{id: "projects-dynamic-sector-rotation-with-machine-learning",
+          section: "News",},{id: "projects-dynamic-sector-rotation-with-machine-learning",
           title: 'Dynamic Sector Rotation with Machine Learning',
           description: "The approach uses both supervised and unsupervised learning models to make informed allocation decisions.",
           section: "Projects",handler: () => {
