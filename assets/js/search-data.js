@@ -9,19 +9,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/ai-folio/";
     },
-  },{id: "nav-projects",
+  },{id: "nav-worldquant-international-quant-championship",
+          title: "WorldQuant International Quant Championship",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/ai-folio/IQC/";
+          },
+        },{id: "nav-projects",
           title: "projects",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/ai-folio/projects/";
-          },
-        },{id: "nav-iqc",
-          title: "IQC",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/ai-folio/IQC/";
           },
         },{id: "books-the-godfather",
           title: 'The Godfather',
