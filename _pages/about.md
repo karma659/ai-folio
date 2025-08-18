@@ -24,11 +24,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I’m a Research Consultant at WorldQuant, where I design and simulate alphas across global markets 🌍.
+I’m a Research Consultant at [WorldQuant](https://www.worldquant.com/brain/) , where I design and simulate alphas across global markets 🌍.
 
-Before that, I worked as a Software Engineer at Goprac, where I automated systems and integrated AI-driven tools ⚡.
+Before that, I worked as a Software Engineer at [Goprac](https://goprac.com/), where I automated systems and integrated AI-driven tools ⚡.
 
-Currently, I’m pursuing  MS in Finance-FinTech at Baruch College (Zicklin School of Business), where I combine finance and coding to solve real-world investment problems 💡.
+Currently, I’m pursuing  MS in Finance-FinTech at [Baruch College (Zicklin School of Business)](https://www.baruch.cuny.edu/), where I combine finance and coding to solve real-world investment problems💡.
 
 I love applying code to finance and teaching others about creating trading strategies. Check out my [projects](/ai-folio/projects/) page for writeups on creating trading strategies and becoming a national finalist in IQC 🚀.
 
