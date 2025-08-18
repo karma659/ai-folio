@@ -56,7 +56,9 @@ The dataset for this project consists of U.S. sector exchange-traded funds (ETFs
 These ETFs were chosen because they collectively cover the primary sectors tracked by the S&P 500 index and provide a diversified representation of the U.S. equity market. Their historical price data captures sector-specific trends and cyclicality, which are essential for building a sector rotation strategy. The historical daily price data was obtained from a reputable financial data provider (e.g., Yahoo Finance). The dataset covers a 10-year period from January 2014 to December 2023, allowing the strategy to be tested across multiple market regimes, including bull markets, bear markets, and volatile transitional phases. To ensure the robustness of the model and avoid overfitting, the data was split into in sample (IS) and out of sample (OOS). In sample data is range from January 2014 to December 2019 that is model training and parameter tuning. Out of sample is range from January 2020 to December 2023 which is performance evaluation. This split ensures that the model is evaluated on entirely unseen market data, providing a realistic measure of predictive power and strategy viability.
 
 Table 1. Summary statistics of sector ETFs (in-sample period)
+
 ---
+
 | ETF | AnnReturn | AnnVol   | DownsideVol | Sharpe  | Sortino  | Skew     | Kurtosis | MDD      | BetaSPY  |
 |-----|-----------|----------|-------------|---------|----------|----------|----------|----------|----------|
 | AGG | 0.032881  | 0.031145 | 0.018506    | 1.055730| 1.776774 | 0.158165 | 1.192040 | -0.035200| -0.038059|
@@ -64,6 +66,7 @@ Table 1. Summary statistics of sector ETFs (in-sample period)
 | EEM | 0.051553  | 0.157677 | 0.085881    | 0.326953| 0.600284 | 0.198633 | -0.054367| -0.301646| 0.947260 |
 | EFA | 0.041978  | 0.115245 | 0.072890    | 0.364247| 0.575903 | -0.293336| -0.096126| -0.187472| 0.849276 |
 | EWJ | 0.077497  | 0.118039 | 0.087498    | 0.656537| 0.885706 | -0.445558| 0.568972 | -0.182909| 0.794969 |
+
 ---
 
 We summarized each sector ETF with risk or return descriptors computed on the training window: annualized return or volatility, downside volatility, Sharpe, Sortino, skewness, kurtosis, maximum drawdown, and beta versus SPY. Features were standardized and reduced to two principal components (PCA) before clustering (K-Means, k=4 via elbow). These features also served as inputs to LightGBM for the directional (up or down) next month return classification.
@@ -120,6 +123,7 @@ Moreover, when compared directly to SPY in the OOS period, the strategy’s exce
 </div>
 
 Final Performance Table
+
 ---
         | Strategy              | Period | AnnRet | AnnVol |  Sharpe  |   MDD  |
         |----------------------|:------:|-------:|-------:|---------:|-------:|
