@@ -61,7 +61,7 @@ ninja.data = [{
               window.location.href = "/ai-folio/projects/wqiqc/";
             },},{id: "projects-ethical-ai-case-competiton",
           title: 'Ethical AI case Competiton',
-          description: "Zicklin Case Competition(conceptualize an AI startup)",
+          description: "Zicklin Case Competition (conceptualize an AI startup)",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/zicklin/";
             },},{
