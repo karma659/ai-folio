@@ -59,6 +59,11 @@ ninja.data = [{
           description: "Creating alpha strategies for portfolio construction",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/wqiqc/";
+            },},{id: "projects-ethical-ai-case-competiton",
+          title: 'Ethical AI case Competiton',
+          description: "Conceptualize an AI startup serving the educational sector while embedding ethical considerations at every level of the business strategy.",
+          section: "Projects",handler: () => {
+              window.location.href = "/ai-folio/projects/zicklin/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
