@@ -1,12 +1,11 @@
 ---
 layout: page
 title: Ethical AI case Competiton
-description: Zicklin Case Competition(conceptualize an AI startup)
+description: Zicklin Case Competition (conceptualize an AI startup)
 img: assets/img/zicklin.jpeg
 importance: 2
 category: work
 giscus_comments: false
-cv_pdf: Zicklin.pdf
 ---
 
 ### The Challenge
@@ -31,14 +30,15 @@ From this experience, I also discovered the importance of storytelling in strate
 Competing against teams from Baruch, Fordham and Rutgers, our team proudly secured third place in the finals. More importantly, I gained the experience of defending ideas before senior leaders and learned how to embed ethics as a foundation for innovation. This competition was not just about winning, it was about shaping a vision for responsible AI in education that I carry into my work today.
 
 
-
-See below , or click this  [link](../assets/pdf/Zicklin.pdf)  to view our presentation slide.
+See below our presentation slide.
 
 
 <div style="margin-left: auto;margin-right: auto;">
-    <object data="../assets/pdf/Zicklin.pdf" type="application/pdf" width="825px" height="1175px">
-        <embed src="../assets/pdf/Zicklin.pdf">
-            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../assets/pdf/Zicklin.pdf">Download PDF</a>.</p>
+    <object data="../../assets/pdf/Zicklin.pdf" type="application/pdf" width="825px" height="465px">
+        <embed src="../../assets/pdf/Zicklin.pdf">
+            <p>This browser does not support PDFs. Please download the PDF to view it: 
+            <a href="../../assets/pdf/Zicklin.pdf">Download PDF</a>.</p>
         </embed>
     </object>
 </div>
+
