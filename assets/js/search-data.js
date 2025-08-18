@@ -49,6 +49,11 @@ ninja.data = [{
           description: "Full-stack e-commerce website",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/Ecom_App/";
+            },},{id: "projects-trading-using-llm",
+          title: 'Trading using LLM',
+          description: "Currently on progress",
+          section: "Projects",handler: () => {
+              window.location.href = "/ai-folio/projects/Trding/";
             },},{id: "projects-portfolio-optimization-and-efficient-frontier-visualizer",
           title: 'Portfolio Optimization and Efficient Frontier Visualizer',
           description: "The model uses the Sharpe Ratio as the objective function and optimizes asset allocation via the SLSQP algorithm.",
