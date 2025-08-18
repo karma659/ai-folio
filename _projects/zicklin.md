@@ -32,7 +32,7 @@ Competing against teams from Baruch, Fordham and Rutgers, our team proudly secur
 
 
 
-See below , or click this  [link](../assets/pdf/Akash2025.pdf)  to view our presentation slide.
+See below , or click this  [link](../assets/pdf/Zicklin.pdf)  to view our presentation slide.
 
 
 <div style="margin-left: auto;margin-right: auto;">
