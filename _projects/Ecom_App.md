@@ -1,5 +1,5 @@
-
 ---
+
 layout: page
 title: MERN Ecommerce Website
 description: a project that redirects to another website
