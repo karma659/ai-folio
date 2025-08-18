@@ -15,14 +15,15 @@ The back test covers the period 2014–2019 for in-sample (IS) testing and 2020�
 ## Key performance results
 The results indicate that while the strategy maintained solid performance during IS, the OOS period showed increased volatility and a decline in the Sharpe ratio, suggesting sensitivity to shifting market regimes. Nonetheless, the LightGBM-based market-timing approach demonstrated resilience, outperforming the Pairs Portfolio in OOS returns while keeping drawdowns at moderate levels.
 
-`
-|                        | Annualized Return | Annual Volatility | Sharpe Ratio | Maximum Drawdown |
-|------------------------|------------------:|------------------:|-------------:|-----------------:|
-| **In-Sample (IS)**     | 8.91%             | 7.96%             | 1.12         | 8.68%            |
-| **Out of Sample (OOS)**| 8.76%             | 12.31%            | 0.71         | 19.64%           |
-| **OOS-SPY**            | 11.25%            | 10.00%            | 1.12         | 15.40%           |
-| **OOS-Pairs Portfolio**| 7.35%             | 10.00%            | 0.74         | 16.11%           |
-`
+---
+        |                        | Annualized Return | Annual Volatility | Sharpe Ratio | Maximum Drawdown |
+        |------------------------|------------------:|------------------:|-------------:|-----------------:|
+        | **In-Sample (IS)**     | 8.91%             | 7.96%             | 1.12         | 8.68%            |
+        | **Out of Sample (OOS)**| 8.76%             | 12.31%            | 0.71         | 19.64%           |
+        | **OOS-SPY**            | 11.25%            | 10.00%            | 1.12         | 15.40%           |
+        | **OOS-Pairs Portfolio**| 7.35%             | 10.00%            | 0.74         | 16.11%           |
+
+---
 
 From a practical perspective, this study confirms the feasibility of combining machine learning with sector rotation for active portfolio management. It also highlights opportunities for further refinement through enhanced feature engineering, incorporation of transaction cost modeling, and regime detection mechanisms to strengthen real-world applicability.
 
@@ -55,7 +56,7 @@ The dataset for this project consists of U.S. sector exchange-traded funds (ETFs
 These ETFs were chosen because they collectively cover the primary sectors tracked by the S&P 500 index and provide a diversified representation of the U.S. equity market. Their historical price data captures sector-specific trends and cyclicality, which are essential for building a sector rotation strategy. The historical daily price data was obtained from a reputable financial data provider (e.g., Yahoo Finance). The dataset covers a 10-year period from January 2014 to December 2023, allowing the strategy to be tested across multiple market regimes, including bull markets, bear markets, and volatile transitional phases. To ensure the robustness of the model and avoid overfitting, the data was split into in sample (IS) and out of sample (OOS). In sample data is range from January 2014 to December 2019 that is model training and parameter tuning. Out of sample is range from January 2020 to December 2023 which is performance evaluation. This split ensures that the model is evaluated on entirely unseen market data, providing a realistic measure of predictive power and strategy viability.
 
 Table 1. Summary statistics of sector ETFs (in-sample period)
-
+---
 | ETF | AnnReturn | AnnVol   | DownsideVol | Sharpe  | Sortino  | Skew     | Kurtosis | MDD      | BetaSPY  |
 |-----|-----------|----------|-------------|---------|----------|----------|----------|----------|----------|
 | AGG | 0.032881  | 0.031145 | 0.018506    | 1.055730| 1.776774 | 0.158165 | 1.192040 | -0.035200| -0.038059|
@@ -63,7 +64,7 @@ Table 1. Summary statistics of sector ETFs (in-sample period)
 | EEM | 0.051553  | 0.157677 | 0.085881    | 0.326953| 0.600284 | 0.198633 | -0.054367| -0.301646| 0.947260 |
 | EFA | 0.041978  | 0.115245 | 0.072890    | 0.364247| 0.575903 | -0.293336| -0.096126| -0.187472| 0.849276 |
 | EWJ | 0.077497  | 0.118039 | 0.087498    | 0.656537| 0.885706 | -0.445558| 0.568972 | -0.182909| 0.794969 |
-
+---
 
 We summarized each sector ETF with risk or return descriptors computed on the training window: annualized return or volatility, downside volatility, Sharpe, Sortino, skewness, kurtosis, maximum drawdown, and beta versus SPY. Features were standardized and reduced to two principal components (PCA) before clustering (K-Means, k=4 via elbow). These features also served as inputs to LightGBM for the directional (up or down) next month return classification.
 
@@ -119,16 +120,16 @@ Moreover, when compared directly to SPY in the OOS period, the strategy’s exce
 </div>
 
 Final Performance Table
-
-| Strategy              | Period | AnnRet | AnnVol |  Sharpe  |   MDD  |
-|----------------------|:------:|-------:|-------:|---------:|-------:|
-| LGBM Market-Timing   |  IS    |  8.91% |  7.96% | 1.118200 |  8.68% |
-| LGBM Market-Timing   |  OOS   |  8.76% | 12.31% | 0.711600 | 19.64% |
-| Pairs_Portfolio_RT10%|  IS    |  9.94% | 10.00% | 0.994035 |  9.93% |
-| Pairs_Portfolio_RT10%|  OOS   |  7.35% | 10.00% | 0.735072 | 16.11% |
-| SPY_RT10%            |  IS    | 10.48% | 10.00% | 1.048096 | 11.52% |
-| SPY_RT10%            |  OOS   | 11.25% | 10.00% | 1.124576 | 15.40% |
-
+---
+        | Strategy              | Period | AnnRet | AnnVol |  Sharpe  |   MDD  |
+        |----------------------|:------:|-------:|-------:|---------:|-------:|
+        | LGBM Market-Timing   |  IS    |  8.91% |  7.96% | 1.118200 |  8.68% |
+        | LGBM Market-Timing   |  OOS   |  8.76% | 12.31% | 0.711600 | 19.64% |
+        | Pairs_Portfolio_RT10%|  IS    |  9.94% | 10.00% | 0.994035 |  9.93% |
+        | Pairs_Portfolio_RT10%|  OOS   |  7.35% | 10.00% | 0.735072 | 16.11% |
+        | SPY_RT10%            |  IS    | 10.48% | 10.00% | 1.048096 | 11.52% |
+        | SPY_RT10%            |  OOS   | 11.25% | 10.00% | 1.124576 | 15.40% |
+---
 
 This section presents the performance evaluation of the two proposed strategies—LGBM Market–Timing and Pairs Portfolio—benchmarked against the SPY ETF. The evaluation is conducted over both the in-sample (IS) period (2014–2019) and the out-of-sample (OOS) period (2020–2025). Key metrics include annualized return (AnnRet), annualized volatility (AnnVol), Sharpe ratio, and maximum drawdown (MDD). During the IS period, LGBM Market–Timing achieved an annualized return of 8.91%, paired with the lowest volatility of 7.96% among the three strategies. This resulted in the highest Sharpe ratio 1.12, indicating superior risk-adjusted returns.
 
