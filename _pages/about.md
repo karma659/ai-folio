@@ -28,7 +28,7 @@ I’m a Research Consultant at [WorldQuant](https://www.worldquant.com/brain/) ,
 
 Before that, I worked as a Software Engineer at [Goprac](https://goprac.com/), where I automated systems and integrated AI-driven tools ⚡.
 
-Currently, I’m pursuing  MS in Finance-FinTech at [Baruch College (Zicklin School of Business)](https://www.baruch.cuny.edu/), where I combine finance and coding to solve real-world investment problems💡.
+Currently, I’m pursuing  MS in Finance-FinTech at [Baruch College (Zicklin School of Business)](https://www.baruch.cuny.edu/), where I combine finance and coding to solve real-world investment problems.
 
 I love applying code to finance and teaching others about creating trading strategies. Check out my [projects](/ai-folio/projects/) page for writeups on creating trading strategies and becoming a national finalist in IQC 🚀.
 
