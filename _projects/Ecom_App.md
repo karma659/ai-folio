@@ -1,5 +1,4 @@
 ---
-
 layout: page
 title: MERN Ecommerce Website
 description: Full-stack e-commerce website with advanced search functionality and a user-friendly cart system and with JWT authentication.
