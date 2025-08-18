@@ -53,7 +53,7 @@ ninja.data = [{
           title: 'Trading using LLM',
           description: "Currently on progress",
           section: "Projects",handler: () => {
-              window.location.href = "/ai-folio/projects/Trding/";
+              window.location.href = "/ai-folio/projects/Trading/";
             },},{id: "projects-portfolio-optimization-and-efficient-frontier-visualizer",
           title: 'Portfolio Optimization and Efficient Frontier Visualizer',
           description: "The model uses the Sharpe Ratio as the objective function and optimizes asset allocation via the SLSQP algorithm.",
