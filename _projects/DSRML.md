@@ -5,7 +5,7 @@ description: The approach uses both supervised and unsupervised learning models 
 
 img: assets/img/lgbm.jpeg
 importance: 2
-category: 
+category: work
 giscus_comments: false
 ---
 
