@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/ai-folio/projects/";
           },
+        },{id: "nav-iqc",
+          title: "IQC",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/ai-folio/IQC/";
+          },
         },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
