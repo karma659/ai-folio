@@ -44,7 +44,7 @@ ninja.data = [{
               window.location.href = "/ai-folio/projects/Ecom_App/";
             },},{id: "projects-portfolio-optimization-and-efficient-frontier-visualizer",
           title: 'Portfolio Optimization and Efficient Frontier Visualizer',
-          description: "a project that redirects to another website",
+          description: "The model uses the Sharpe Ratio as the objective function and optimizes asset allocation via the SLSQP algorithm.",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/portfolio/";
             },},{id: "projects-worldquant-international-quant-championship",
