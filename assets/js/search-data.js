@@ -37,9 +37,9 @@ ninja.data = [{
           description: "The approach uses both supervised and unsupervised learning models to make informed allocation decisions.",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/DSRML/";
-            },},{id: "projects-mern-ecommerce-website",
-          title: 'MERN Ecommerce Website',
-          description: "a project that redirects to another website",
+            },},{id: "projects-",
+          title: '',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/Ecom_App/";
             },},{id: "projects-portfolio-optimization-and-efficient-frontier-visualizer",
