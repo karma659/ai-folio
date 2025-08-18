@@ -25,9 +25,9 @@ Ethical AI by Design ,We positioned Edvance not only as a business but as a huma
 From brainstorming to pitching, we transformed a simple idea into a scalable startup concept with a clear roadmap. 
 The competition taught me valuable lessons about bridging vision with practicality. The judges — Kenny Cheung, Dennis Hickey, Nizan Geslevich Packin and Danny H. Park — pressed us to think beyond the pitch deck and address questions of scalability, regulatory compliance, and ethical accountability. Through their feedback, I learned that successful EdTech solutions require not only market readiness but also deep trust and inclusivity to truly empower learners.
 
-From this experience, I also discovered the importance of storytelling in strategy. It was not enough to present a strong business model; we had to demonstrate how Edvance could tangibly transform education while safeguarding human dignity. With a growing global market for AI tutoring we designed a revenue model combining affordable B2C subscriptions with larger B2B institutional contracts ensuring both scalability and accessibility.
+From this experience, I also discovered the importance of storytelling in strategy. It was not enough to present a strong business model, we had to demonstrate how Edvance could tangibly transform education while safeguarding human dignity. With a growing global market for AI tutoring we designed a revenue model combining affordable B2C subscriptions with larger B2B institutional contracts ensuring both scalability and accessibility.
 
-Competing against teams from Baruch, Fordham and Rutgers, our team proudly secured third place in the finals. More importantly, I gained the experience of defending ideas before senior leaders and learned how to embed ethics as a foundation for innovation. This competition was not just about winning; it was about shaping a vision for responsible AI in education that I carry into my work today.
+Competing against teams from Baruch, Fordham and Rutgers, our team proudly secured third place in the finals. More importantly, I gained the experience of defending ideas before senior leaders and learned how to embed ethics as a foundation for innovation. This competition was not just about winning, it was about shaping a vision for responsible AI in education that I carry into my work today.
 
 
 
