@@ -39,12 +39,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/ai-folio/projects/3_project/";
-            },},{id: "projects-project-4",
+          section: "News",},{id: "projects-project-4",
           title: 'project 4',
           description: "another without an image",
           section: "Projects",handler: () => {
@@ -54,6 +49,11 @@ ninja.data = [{
           description: "The approach uses both supervised and unsupervised learning models to make informed allocation decisions.",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/DSRML/";
+            },},{id: "projects-portfolio-optimization-and-efficient-frontier-visualizer",
+          title: 'Portfolio Optimization and Efficient Frontier Visualizer',
+          description: "a project that redirects to another website",
+          section: "Projects",handler: () => {
+              window.location.href = "/ai-folio/projects/portfolio/";
             },},{id: "projects-worldquant-international-quant-championship",
           title: 'WorldQuant International Quant Championship',
           description: "Creating alpha strategies for portfolio construction",
