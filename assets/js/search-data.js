@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/ai-folio/";
     },
-  },{id: "nav-worldquant-international-quant-championship",
-          title: "WorldQuant International Quant Championship",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/ai-folio/IQC/";
-          },
-        },{id: "nav-projects",
+  },{id: "nav-projects",
           title: "projects",
           description: "",
           section: "Navigation",
