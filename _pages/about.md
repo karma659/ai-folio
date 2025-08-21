@@ -32,7 +32,7 @@ Currently, I’m pursuing  MS in Finance-FinTech at [Baruch College (Zicklin Sch
 
 I ❤️ applying code to finance and teaching others about creating trading strategies. Check out my [projects](/ai-folio/projects/) page for writeups on creating trading strategies and becoming a national finalist in IQC 🚀.
 
-Please feel free to contact me on [LinkedIn](https://www.linkedin.com/in/karmakarakash659/) or via [email](mailto:glazar.karmakarakash659@gmail.com) if you have any questions about my work.
+Please feel free to contact me on [LinkedIn](https://www.linkedin.com/in/karmakarakash659/) or via [email](mailto:karmakarakash659@gmail.com) if you have any questions about my work.
 
 
 <!--  [Font Awesome icons](https://fontawesome.com/)  [Academicons](https://jpswalsh.github.io/academicons/) -->
