@@ -5,6 +5,7 @@ title: cv
 nav: true
 nav_order: 1
 cv_pdf: Akash_Resume.pdf
+
 ---
 
 See below, or click this [link](../assets/pdf/Akash_Resume.pdf)
