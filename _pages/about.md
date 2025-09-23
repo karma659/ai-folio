@@ -24,7 +24,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I’m a Research Consultant at [WorldQuant](https://www.worldquant.com/brain/) , where I design and simulate alphas across global markets 🌍.
+I am currently a Fall 2025 Intern @ [FBN Securities](https://www.fbnsecurities.com/), New York.
+Previously a Research Consultant at [WorldQuant](https://www.worldquant.com/brain/) , where I designed and simulated alphas across global markets 🌍.
 
 Before that, I worked as a Software Engineer at [Goprac](https://goprac.com/), where I automated systems and integrated AI-driven tools ⚡.
 
