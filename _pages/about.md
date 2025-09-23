@@ -24,15 +24,18 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently a Fall 2025 Intern @ [FBN Securities](https://www.fbnsecurities.com/), New York.
-Previously a Research Consultant at [WorldQuant](https://www.worldquant.com/brain/) , where I designed and simulated alphas across global markets 🌍.
+I am currently a Fall 2025 Intern at [FBN Securities](https://www.fbnsecurities.com/), New York.
+Previously a Research Consultant at [WorldQuant](https://www.worldquant.com/brain/), where I designed and simulated alphas across global markets 🌍.
 
-Before that, I worked as a Software Engineer at [Goprac](https://goprac.com/), where I automated systems and integrated AI-driven tools ⚡.
+Before that , I worked as a Software Engineer at [Goprac](https://goprac.com/), where I automated systems and integrated AI-driven tools ⚡.
 
 Currently, I’m pursuing  MS in Finance-FinTech at [Baruch College (Zicklin School of Business)](https://www.baruch.cuny.edu/), where I combine finance and coding to solve real-world investment problems.
 
-I ❤️ applying code to finance and teaching others about creating trading strategies. Check out my [projects](/ai-folio/projects/) page for writeups on creating trading strategies and becoming a national finalist in IQC 🚀.
+I ❤️ applying code to finance and teaching others about creating trading strategies. I am currently a Graduate Teaching Assistant for Python Courses @ [Zicklin School of Business](https://zicklin.baruch.cuny.edu/). 
 
+Check out my [projects](/ai-folio/projects/) page for writeups on creating trading strategies and becoming a national finalist in IQC 🚀.
+
+ 
 Please feel free to contact me on [LinkedIn](https://www.linkedin.com/in/karmakarakash659/) or via [email](mailto:karmakarakash659@gmail.com) if you have any questions about my work.
 
 
