@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently working as a Software Programmer at [Alternate Investment Mangagement Platform](https://www.aimpaas.com/) (AIMPAAS) and a  Developer Intern at [FBN Securities](https://www.fbnsecurities.com/), New York 📈.
+I am currently working as a Software Programmer at [Alternate Investment Mangagement Platform](https://www.aimpaas.com/aboutus.html) (AIMPAAS) and a  Developer Intern at [FBN Securities](https://www.fbnsecurities.com/), New York 📈.
 
 Previously a Quant Research Consultant at [WorldQuant](https://www.worldquant.com/brain/), where I designed and simulated alphas across global markets 🌍.
 
