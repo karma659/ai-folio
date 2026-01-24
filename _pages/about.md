@@ -24,13 +24,13 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently working as a Software Programmer at [Alternate Investment Mangagement Platform](https://www.aimpaas.com/aboutus.html) (AIMPAAS) and a  Developer Intern at [FBN Securities](https://www.fbnsecurities.com/), New York 📈.
+I am currently working as a Software Programmer at [Alternate Investment Mangagement Platform](https://www.aimpaas.com/aboutus.html) (AIMPAAS), New York 📈.
 
 Previously a Quant Research Consultant at [WorldQuant](https://www.worldquant.com/brain/), where I designed and simulated alphas across global markets 🌍.
 
 Before that , I worked as a Software Engineer at [Goprac](https://goprac.com/), where I automated systems and integrated AI-driven tools 🤖.
 
-Currently, I’m pursuing  MS in Finance-FinTech at [Baruch College (Zicklin School of Business)](https://www.baruch.cuny.edu/), where I combine finance and coding to solve real-world investment problems ⚡.
+Currently, I’m pursuing  MS in Finance at [Baruch College (Zicklin School of Business)](https://www.baruch.cuny.edu/), where I combine finance and coding to solve real-world investment problems ⚡.
 
 I ❤️ applying code to finance and teaching others about creating trading strategies. I am currently a Graduate Teaching Assistant for Python Courses @ [Zicklin School of Business](https://zicklin.baruch.cuny.edu/). 
 
