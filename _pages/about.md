@@ -26,7 +26,7 @@ latest_posts:
 
 I am currently working as a Software Programmer at [Alternate Investment Mangagement Platform](https://www.aimpaas.com/aboutus.html) (AIMPAAS), New York 📈.
 
-Previously a Quant Research Consultant at [WorldQuant](https://www.worldquant.com/brain/), where I designed and simulated alphas across global markets 🌍.
+Previously a developer intern at FBN securities and  Quant Research Consultant at [WorldQuant](https://www.worldquant.com/brain/), where I designed and simulated alphas across global markets 🌍.
 
 Before that , I worked as a Software Engineer at [Goprac](https://goprac.com/), where I automated systems and integrated AI-driven tools 🤖.
 
