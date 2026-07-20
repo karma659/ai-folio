@@ -42,11 +42,11 @@ ninja.data = [{
           description: "Full-stack e-commerce website",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/Ecom_App/";
-            },},{id: "projects-trading-using-llm",
-          title: 'Trading using LLM',
-          description: "Currently on progress",
+            },},{id: "projects-interactive-portfolio-optimizer-dashboard",
+          title: 'Interactive Portfolio Optimizer Dashboard',
+          description: "A Modern Portfolio Theory dashboard comparing four allocation strategies with practical constraints, Monte Carlo simulation, and synchronized risk visualizations.",
           section: "Projects",handler: () => {
-              window.location.href = "/ai-folio/projects/Trading/";
+              window.location.href = "/ai-folio/projects/interactive-portfolio-optimizer/";
             },},{id: "projects-kalshi-btc-trading-engine",
           title: 'Kalshi BTC Trading Engine',
           description: "A real-time event-contract trading engine with data-quality gates, fill-confirmed execution, a live React dashboard, and deterministic backtesting.",
@@ -62,8 +62,8 @@ ninja.data = [{
           description: "Creating alpha strategies for portfolio construction",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/wqiqc/";
-            },},{id: "projects-ethical-ai-case-competiton",
-          title: 'Ethical AI case Competiton',
+            },},{id: "projects-ethical-ai-case-competition",
+          title: 'Ethical AI Case Competition',
           description: "Zicklin Case Competition (conceptualize an AI startup)",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/zicklin/";
