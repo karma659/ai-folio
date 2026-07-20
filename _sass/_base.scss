@@ -195,6 +195,12 @@ ul.task-list input[type="checkbox"] {
 .profile {
   width: 100%;
 
+  .profile-photo {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center bottom;
+  }
+
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
