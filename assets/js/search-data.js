@@ -54,6 +54,11 @@ ninja.data = [{
           description: "Currently on progress",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/Trading/";
+            },},{id: "projects-kalshi-btc-trading-engine",
+          title: 'Kalshi BTC Trading Engine',
+          description: "A real-time event-contract trading engine with data-quality gates, fill-confirmed execution, a live React dashboard, and deterministic backtesting.",
+          section: "Projects",handler: () => {
+              window.location.href = "/ai-folio/projects/kalshi-btc/";
             },},{id: "projects-portfolio-optimization-and-efficient-frontier-visualizer",
           title: 'Portfolio Optimization and Efficient Frontier Visualizer',
           description: "The model uses the Sharpe Ratio as the objective function and optimizes asset allocation via the SLSQP algorithm.",
