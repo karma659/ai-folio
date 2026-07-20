@@ -4,7 +4,7 @@ title: Dynamic Sector Rotation with Machine Learning
 description: The approach uses both supervised and unsupervised learning models to make informed allocation decisions.
 
 img: assets/img/lgbm.jpeg
-importance: 2
+importance: 3
 category: work
 giscus_comments: false
 ---
@@ -150,4 +150,3 @@ SPY Benchmark outperformed in OOS, highlighting the resilience of a passive buy-
 
 This study evaluated a sector rotation strategy using a LightGBM-based market-timing approach and compared it with the Pairs Portfolio benchmark and the SPDR S&P 500 ETF Trust (SPY). The analysis covered both the in-sample (2014–2019) and out-of-sample (2020–2025) periods to examine the strategy’s robustness and adaptability. The LightGBM strategy achieved the highest risk-adjusted return in the in-sample period, with a Sharpe ratio of 1.12 and the lowest volatility among the tested strategies, highlighting its strength in stable or moderately volatile environments. In the out-of-sample results, the strategy outperformed the Pairs Portfolio in absolute returns (8.76% vs. 7.35%) but lagged behind SPY in both returns and Sharpe ratio under prolonged bull market conditions. The higher volatility (12.31%) and maximum drawdown (19.64%) suggest that the strategy’s performance was more sensitive to market regime changes in strongly trending markets.
 From an investor’s perspective, this strategy may appeal to those who prefer a more dynamic, model-driven approach that adapts to changing sector conditions rather than relying solely on a passive buy-and-hold strategy. However, in a sustained bull market, a passive benchmark such as SPY may still be more advantageous in terms of absolute returns.
-

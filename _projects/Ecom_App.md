@@ -4,7 +4,6 @@ title: MERN Ecommerce Website
 description: Full-stack e-commerce website
 img: assets/img/ecom.png
 redirect: https://appecomo-karma659.vercel.app/
-importance: 5
+importance: 7
 category: work 
 ---
-
