@@ -639,6 +639,7 @@ html[data-theme="dark"] .portfolio-button.primary {
   background: var(--folio-soft);
   border: 1px solid var(--folio-line);
   border-radius: 12px;
+  margin-top: 76px;
   margin-bottom: 65px;
 }
 .contact-panel h2 {
@@ -931,6 +932,7 @@ html[data-theme="dark"] .portfolio-button.primary {
     align-items: start;
     flex-direction: column;
     padding: 28px;
+    margin-top: 48px;
     margin-bottom: 40px;
   }
   .contact-panel h2 {
