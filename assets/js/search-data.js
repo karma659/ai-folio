@@ -57,9 +57,9 @@ ninja.data = [{
           description: "The model uses the Sharpe Ratio as the objective function and optimizes asset allocation via the SLSQP algorithm.",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/portfolio/";
-            },},{id: "projects-worldquant-international-quant-championship",
-          title: 'WorldQuant International Quant Championship',
-          description: "Creating alpha strategies for portfolio construction",
+            },},{id: "projects-trading-the-signature-of-informed-money",
+          title: 'Trading the Signature of Informed Money',
+          description: "Three behavioral hypotheses turned into trading signals, with positive out-of-sample returns from 2018 to 2023.",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/wqiqc/";
             },},{id: "projects-ethical-ai-case-competition",
@@ -67,30 +67,4 @@ ninja.data = [{
           description: "Zicklin Case Competition (conceptualize an AI startup)",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/zicklin/";
-            },},{
-      id: 'light-theme',
-      title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("light");
-      },
-    },
-    {
-      id: 'dark-theme',
-      title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("dark");
-      },
-    },
-    {
-      id: 'system-theme',
-      title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("system");
-      },
-    },];
+            },},];
