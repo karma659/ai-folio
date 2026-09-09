@@ -48,11 +48,11 @@
   let pointer = 0;
 
   function project(x, y, z) {
-    const angle = -.34 + pointer * .13;
+    const angle = -0.34 + pointer * 0.13;
     const rx = x * Math.cos(angle) - z * Math.sin(angle);
     const rz = x * Math.sin(angle) + z * Math.cos(angle);
     const scale = Math.min(width / 480, height / 280);
-    return [width / 2 + rx * scale, height * .49 + (y * .86 + rz * .38) * scale];
+    return [width / 2 + rx * scale, height * 0.49 + (y * 0.86 + rz * 0.38) * scale];
   }
 
   function draw() {
@@ -68,33 +68,43 @@
         let z = (row - (rows - 1) / 2) * 11;
         let y;
         if (mode === "signal") {
-          const distance = Math.sqrt(x * x * .7 + z * z);
-          y = Math.sin(distance / 33 - time * .6) * 27 + Math.cos(x / 62 + time * .25) * 28;
+          const distance = Math.sqrt(x * x * 0.7 + z * z);
+          y = Math.sin(distance / 33 - time * 0.6) * 27 + Math.cos(x / 62 + time * 0.25) * 28;
         } else if (mode === "regime") {
-          y = Math.sin(x / 40 + time * .3) * Math.cos(z / 42 - time * .2) * 62;
+          y = Math.sin(x / 40 + time * 0.3) * Math.cos(z / 42 - time * 0.2) * 62;
         } else {
-          const theta = col / (columns - 1) * Math.PI * 2;
-          const phi = row / (rows - 1) * Math.PI * 2;
+          const theta = (col / (columns - 1)) * Math.PI * 2;
+          const phi = (row / (rows - 1)) * Math.PI * 2;
           const radius = 105 + 37 * Math.cos(phi);
-          x = radius * Math.cos(theta + time * .15);
-          z = radius * Math.sin(theta + time * .15);
+          x = radius * Math.cos(theta + time * 0.15);
+          z = radius * Math.sin(theta + time * 0.15);
           y = 37 * Math.sin(phi);
         }
         const p = project(x, y, z);
         points[row][col] = p;
         if (col > 0) {
           const before = points[row][col - 1];
-          ctx.beginPath(); ctx.moveTo(before[0], before[1]); ctx.lineTo(p[0], p[1]);
-          ctx.strokeStyle = "rgba(170,226,143,0.23)"; ctx.lineWidth = .65; ctx.stroke();
+          ctx.beginPath();
+          ctx.moveTo(before[0], before[1]);
+          ctx.lineTo(p[0], p[1]);
+          ctx.strokeStyle = "rgba(170,226,143,0.23)";
+          ctx.lineWidth = 0.65;
+          ctx.stroke();
         }
         if (row > 0) {
           const before = points[row - 1][col];
-          ctx.beginPath(); ctx.moveTo(before[0], before[1]); ctx.lineTo(p[0], p[1]);
-          ctx.strokeStyle = "rgba(132,203,174,0.16)"; ctx.lineWidth = .55; ctx.stroke();
+          ctx.beginPath();
+          ctx.moveTo(before[0], before[1]);
+          ctx.lineTo(p[0], p[1]);
+          ctx.strokeStyle = "rgba(132,203,174,0.16)";
+          ctx.lineWidth = 0.55;
+          ctx.stroke();
         }
         const emphasis = (col + row * 3) % 17 === 0;
-        ctx.beginPath(); ctx.arc(p[0], p[1], emphasis ? 2 : 1, 0, Math.PI * 2);
-        ctx.fillStyle = emphasis ? "#d4ff9e" : "rgba(153,218,154,0.64)"; ctx.fill();
+        ctx.beginPath();
+        ctx.arc(p[0], p[1], emphasis ? 2 : 1, 0, Math.PI * 2);
+        ctx.fillStyle = emphasis ? "#d4ff9e" : "rgba(153,218,154,0.64)";
+        ctx.fill();
       }
     }
   }
@@ -107,7 +117,7 @@
     frame = null;
     if (!shouldAnimate()) return;
     if (timestamp - previousFrame >= 32) {
-      time += Math.min((timestamp - previousFrame) / 1000, .05);
+      time += Math.min((timestamp - previousFrame) / 1000, 0.05);
       previousFrame = timestamp;
       draw();
     }
@@ -120,7 +130,10 @@
     pauseButton.disabled = reducedMotion.matches;
     pauseButton.textContent = reducedMotion.matches ? "Motion off" : paused ? "Play" : "Pause";
     pauseButton.setAttribute("aria-pressed", String(paused || reducedMotion.matches));
-    pauseButton.setAttribute("aria-label", reducedMotion.matches ? "Animation disabled by reduced motion preference" : paused ? "Play visualization" : "Pause visualization");
+    pauseButton.setAttribute(
+      "aria-label",
+      reducedMotion.matches ? "Animation disabled by reduced motion preference" : paused ? "Play visualization" : "Pause visualization"
+    );
     draw();
     if (shouldAnimate()) {
       previousFrame = performance.now();
@@ -139,23 +152,44 @@
     draw();
   }
 
-  modeButtons.forEach((button) => button.addEventListener("click", () => {
-    mode = button.dataset.signalMode;
-    modeButtons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
-    description.textContent = descriptions[mode];
-    draw();
-  }));
-  pauseButton.addEventListener("click", () => { paused = !paused; syncAnimation(); });
-  studio.addEventListener("pointermove", (event) => {
-    if (!finePointer.matches || reducedMotion.matches || paused) return;
-    const bounds = studio.getBoundingClientRect();
-    pointer = (event.clientX - bounds.left) / bounds.width - .5;
-  }, { passive: true });
-  studio.addEventListener("pointerleave", () => { pointer = 0; }, { passive: true });
+  modeButtons.forEach((button) =>
+    button.addEventListener("click", () => {
+      mode = button.dataset.signalMode;
+      modeButtons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+      description.textContent = descriptions[mode];
+      draw();
+    })
+  );
+  pauseButton.addEventListener("click", () => {
+    paused = !paused;
+    syncAnimation();
+  });
+  studio.addEventListener(
+    "pointermove",
+    (event) => {
+      if (!finePointer.matches || reducedMotion.matches || paused) return;
+      const bounds = studio.getBoundingClientRect();
+      pointer = (event.clientX - bounds.left) / bounds.width - 0.5;
+    },
+    { passive: true }
+  );
+  studio.addEventListener(
+    "pointerleave",
+    () => {
+      pointer = 0;
+    },
+    { passive: true }
+  );
   document.addEventListener("visibilitychange", syncAnimation);
   reducedMotion.addEventListener("change", syncAnimation);
   if ("IntersectionObserver" in window) {
-    new IntersectionObserver(([entry]) => { inView = entry.isIntersecting; syncAnimation(); }, { threshold: .05 }).observe(studio);
+    new IntersectionObserver(
+      ([entry]) => {
+        inView = entry.isIntersecting;
+        syncAnimation();
+      },
+      { threshold: 0.05 }
+    ).observe(studio);
   }
   if ("ResizeObserver" in window) new ResizeObserver(resize).observe(canvas);
   else window.addEventListener("resize", resize, { passive: true });

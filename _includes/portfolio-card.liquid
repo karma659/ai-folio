@@ -7,6 +7,17 @@
       <span class="project-number" aria-hidden="true">0{{ project.importance }}</span><span class="project-arrow" aria-hidden="true">↗</span>
       <span class="project-art-caption" aria-hidden="true">{{ project_meta.visual_label | default: 'Research / Develop / Test' }}</span>
     </div>
-    <div class="project-card-copy"><p class="project-category">{{ project_meta.label | default: 'Quantitative research' }}</p><h3>{{ project.title }}</h3><p class="project-summary">{{ project.description }}</p><div class="project-card-bottom"><span>{{ project_meta.stack | default: 'Research' }}</span><span>{{ project_meta.action | default: 'Read case study' }} <span aria-hidden="true">↗</span></span></div></div>
+    <div class="project-card-copy">
+      <p class="project-category">{{ project_meta.label | default: 'Quantitative research' }}</p>
+      <h3>{{ project.title }}</h3>
+      <p class="project-summary">{{ project.description }}</p>
+      <div class="project-card-bottom">
+        <span>{{ project_meta.stack | default: 'Research' }}</span
+        ><span>
+          {{- project_meta.action | default: 'Read case study' }}
+          <span aria-hidden="true">↗</span></span
+        >
+      </div>
+    </div>
   </a>
 </article>
