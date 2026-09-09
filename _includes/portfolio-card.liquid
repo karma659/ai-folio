@@ -1,0 +1,12 @@
+{% assign project_key = project.slug | default: project.title | slugify %}
+{% assign project_meta = site.data.portfolio_projects[project_key] %}
+<article class="portfolio-card" data-project-category="{{ project_meta.filter | default: 'research' }}">
+  <a class="portfolio-card-link" href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+    <div class="project-art project-art-{{ project_meta.art | default: 'signal' }}">
+      <img src="{{ project_meta.image | default: '/assets/img/portfolio/signal.svg' | relative_url }}" alt="" loading="lazy" width="720" height="420">
+      <span class="project-number" aria-hidden="true">0{{ project.importance }}</span><span class="project-arrow" aria-hidden="true">↗</span>
+      <span class="project-art-caption" aria-hidden="true">{{ project_meta.visual_label | default: 'Research / Develop / Test' }}</span>
+    </div>
+    <div class="project-card-copy"><p class="project-category">{{ project_meta.label | default: 'Quantitative research' }}</p><h3>{{ project.title }}</h3><p class="project-summary">{{ project.description }}</p><div class="project-card-bottom"><span>{{ project_meta.stack | default: 'Research' }}</span><span>{{ project_meta.action | default: 'Read case study' }} <span aria-hidden="true">↗</span></span></div></div>
+  </a>
+</article>

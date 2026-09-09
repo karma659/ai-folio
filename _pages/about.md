@@ -24,18 +24,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently working as a Software Programmer at [Alternate Investment Mangagement Platform](https://www.aimpaas.com/aboutus.html) (AIMPAAS), New York 📈.
+My work sits at the intersection of **quantitative finance and software engineering**. I enjoy taking an open question, exploring the data and building a system that makes the answer useful.
 
-Previously a developer intern at [FBN securities](https://www.fbnsecurities.com/) and  Quant Research Consultant at [WorldQuant](https://www.worldquant.com/brain/), where I designed and simulated alphas across global markets 🌍.
+At [AIMPaaS](https://www.aimpaas.com/aboutus.html), I developed infrastructure for portfolio operations. At [FBN Securities](https://www.fbnsecurities.com/), I built tools for institutional research. My work at [WorldQuant](https://www.worldquant.com/brain/) focused on developing and backtesting alpha signals across global equities.
 
-Before that , I worked as a Software Engineer at [Goprac](https://goprac.com/), where I automated systems and integrated AI-driven tools 🤖.
-
-Currently, I’m pursuing  MS in Finance at [Baruch College (Zicklin School of Business)](https://www.baruch.cuny.edu/), where I combine finance and coding to solve real-world investment problems ⚡.
-
-Check out my [projects](/ai-folio/projects/) page for writeups on creating trading strategies and becoming a national finalist in IQC 🚀.
-
- 
-Please feel free to contact me on [LinkedIn](https://www.linkedin.com/in/karmakarakash659/).
-
-
-<!--  [Font Awesome icons](https://fontawesome.com/)  [Academicons](https://jpswalsh.github.io/academicons/) -->
+Earlier, I worked on automation and AI tools at [Goprac](https://goprac.com/). I hold an MS in Finance with a FinTech concentration from [Baruch College](https://www.baruch.cuny.edu/) and a Bachelor of Engineering from Jadavpur University.

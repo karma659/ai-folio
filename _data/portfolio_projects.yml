@@ -1,0 +1,56 @@
+wqiqc:
+  filter: research
+  label: Alpha research / WorldQuant
+  art: signal
+  image: /assets/img/portfolio/signal.svg
+  visual_label: Data → Signal → Portfolio
+  stack: Alpha signals · Backtesting
+  action: Read case study
+kalshi-btc:
+  filter: trading
+  label: Trading systems / Prediction markets
+  art: trading
+  image: /assets/img/portfolio/trading.svg
+  visual_label: Observe → Validate → Execute
+  stack: Python · Node.js · React
+  action: Explore code
+dsrml:
+  filter: research
+  label: Machine learning / Asset allocation
+  art: regime
+  image: /assets/img/portfolio/regime.svg
+  visual_label: Detect → Predict → Allocate
+  stack: LightGBM · PCA · Python
+  action: Read case study
+interactive-portfolio-optimizer:
+  filter: research
+  label: Interactive tools / Portfolio construction
+  art: allocation
+  image: /assets/img/portfolio/allocation.svg
+  visual_label: Constraints → Scenarios → Decisions
+  stack: Python · Monte Carlo · MPT
+  action: Open notebook
+portfolio:
+  filter: research
+  label: Quantitative research / Optimization
+  art: frontier
+  image: /assets/img/portfolio/frontier.svg
+  visual_label: Risk ↔ Return
+  stack: Python · SLSQP
+  action: Explore code
+zicklin:
+  filter: software
+  label: Applied AI / Ethical design
+  art: network
+  image: /assets/img/portfolio/network.svg
+  visual_label: Learn → Adapt → Empower
+  stack: EdTech · AI · Product strategy
+  action: Read case study
+ecom-app:
+  filter: software
+  label: Software engineering / Full stack
+  art: commerce
+  image: /assets/img/portfolio/commerce.svg
+  visual_label: Discover → Connect → Build
+  stack: MongoDB · Express · React · Node.js
+  action: View website

@@ -16,12 +16,13 @@
   </head>
 
   <!-- Body -->
-  <body class="tech-portfolio {% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body class="tech-portfolio portfolio-v2 {% if page.permalink == '/' %}portfolio-home{% elsif page.permalink == '/projects/' %}portfolio-projects{% elsif page.collection == 'projects' %}portfolio-reading{% endif %} {% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- Header -->
     {% include header.liquid %}
 
     <!-- Content -->
-    <div class="container mt-5" role="main">
+    <div class="container mt-5" id="main-content" role="main" tabindex="-1">
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == 'right' %}
           <div class="row">
