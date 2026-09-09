@@ -313,9 +313,35 @@ html[data-theme="dark"] .portfolio-button.primary {
   font-size: 9px;
 }
 .signal-display {
+  --signal-x: 50%;
+  --signal-y: 50%;
   height: 285px;
   position: relative;
   background: radial-gradient(ellipse at center, #1a3627 0, #0c1c17 70%);
+  cursor: crosshair;
+  isolation: isolate;
+  outline: none;
+  touch-action: pan-y;
+}
+.signal-display::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(circle 105px at var(--signal-x) var(--signal-y), rgba(181, 245, 138, 0.16), transparent 72%);
+  transition: opacity 220ms ease;
+}
+.signal-studio.is-engaged .signal-display::after,
+.signal-display:focus-visible::after {
+  opacity: 1;
+}
+.signal-display:focus-visible {
+  box-shadow: inset 0 0 0 2px rgba(181, 245, 138, 0.65);
+}
+.signal-studio.is-interacting .signal-display {
+  cursor: none;
 }
 .signal-canvas,
 .signal-fallback {
@@ -326,6 +352,7 @@ html[data-theme="dark"] .portfolio-button.primary {
 .signal-canvas {
   position: absolute;
   inset: 0;
+  z-index: 1;
 }
 .signal-fallback {
   object-fit: cover;
@@ -333,8 +360,52 @@ html[data-theme="dark"] .portfolio-button.primary {
 .signal-studio.is-ready .signal-fallback {
   visibility: hidden;
 }
+.studio-hud {
+  position: absolute;
+  z-index: 3;
+  top: 14px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  pointer-events: none;
+  color: #91ad9a;
+  font:
+    7px "SFMono-Regular",
+    Consolas,
+    monospace;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.studio-live,
+.studio-readout {
+  padding: 6px 8px;
+  border: 1px solid rgba(108, 151, 123, 0.24);
+  border-radius: 4px;
+  background: rgba(8, 24, 18, 0.66);
+  backdrop-filter: blur(8px);
+}
+.studio-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.studio-live > span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #b5f58a;
+  box-shadow: 0 0 10px rgba(181, 245, 138, 0.75);
+}
+.signal-studio.is-paused .studio-live > span {
+  background: #73887a;
+  box-shadow: none;
+}
 .studio-axis {
   position: absolute;
+  z-index: 3;
   left: 22px;
   right: 22px;
   bottom: 13px;

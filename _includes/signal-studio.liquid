@@ -2,9 +2,17 @@
   <div class="studio-heading">
     <span><span class="status-dot" aria-hidden="true"></span> Signal studio</span><span class="studio-index">AK / 001</span>
   </div>
-  <div class="signal-display">
+  <div
+    class="signal-display"
+    tabindex="0"
+    aria-label="Interactive signal field. Move your pointer to shape the surface, or click to send an impulse."
+  >
     <img class="signal-fallback" src="{{ '/assets/img/portfolio/signal.svg' | relative_url }}" alt="An abstract field of connected data points">
     <canvas class="signal-canvas" aria-hidden="true"></canvas>
+    <div class="studio-hud" aria-hidden="true">
+      <span class="studio-live"><span></span> Move / sculpt · Click / impulse</span>
+      <span class="studio-readout">X 50 · Y 50 · I 00</span>
+    </div>
     <div class="studio-axis" aria-hidden="true"><span>RESEARCH</span><span>ENGINEERING</span></div>
   </div>
   <div class="studio-controls" hidden>
@@ -16,7 +24,7 @@
     <button class="motion-toggle" type="button" aria-label="Pause visualization" aria-pressed="false">Pause</button>
   </div>
   <div class="studio-caption">
-    <p class="studio-description" aria-live="polite">Finding structure in a field of signals.</p>
-    <span>Illustrative visualization</span>
+    <p class="studio-description" aria-live="polite">Shape the field with your pointer. Click to inject a signal.</p>
+    <span>Interactive research visualization</span>
   </div>
 </div>
