@@ -1,11 +1,11 @@
 wqiqc:
   filter: research
-  label: Alpha research / WorldQuant
+  label: Medium research / Alpha signals
   art: signal
   image: /assets/img/portfolio/signal.svg
   visual_label: Data → Signal → Portfolio
-  stack: Alpha signals · Backtesting
-  action: Read case study
+  stack: WorldQuant BRAIN · Alpha research
+  action: Read on Medium
 kalshi-btc:
   filter: trading
   label: Trading systems / Prediction markets

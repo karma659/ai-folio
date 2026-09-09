@@ -1,11 +1,12 @@
 ---
 layout: page
-title: WorldQuant International Quant Championship
-description: Creating alpha strategies for portfolio construction
+title: Trading the Signature of Informed Money
+description: Three behavioral hypotheses turned into trading signals, with positive out-of-sample returns from 2018 to 2023.
 img: assets/img/IQC_logo.webp
 importance: 1
 category: work
 related_publications: false
+redirect: https://medium.com/@akashk.nyc/trading-the-signature-of-informed-money-three-alphas-from-the-iqc-2025-baab38ab185c
 ---
 
 
@@ -100,4 +101,3 @@ Overall, I found that options driven alphas especially those based on implied vo
 I had a great time learning about backtesting, alpha generation, and data exploration from some of the best quant researchers in the world. The tutorials, seminars, and recommended papers complemented each other very well.
 
 I would like to thank WorldQuant again for putting together such a well-run and exciting event. I’m looking forward to another competition next year!
-
