@@ -5,5 +5,5 @@ description: Full-stack e-commerce website
 img: assets/img/ecom.png
 redirect: https://appecomo-karma659.vercel.app/
 importance: 7
-category: work
+category: work 
 ---

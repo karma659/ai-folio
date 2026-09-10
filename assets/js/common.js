@@ -37,7 +37,7 @@ $(document).ready(function () {
   cssLink.rel = "stylesheet";
   cssLink.type = "text/css";
 
-  let jupyterTheme = typeof determineComputedTheme === "function" ? determineComputedTheme() : document.documentElement.dataset.theme || "dark";
+  let jupyterTheme = determineComputedTheme();
 
   $(".jupyter-notebook-iframe-container iframe").each(function () {
     $(this).contents().find("head").append(cssLink);

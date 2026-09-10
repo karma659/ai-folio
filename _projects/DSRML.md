@@ -14,11 +14,9 @@ This report presents the implementation and performance evaluation of a dynamic 
 The back test covers the period 2014–2019 for in-sample (IS) testing and 2020–2025 for out-of-sample (OOS) validation, using sector ETF returns and the SPY ETF as a benchmark.
 
 ## Key performance results
-
 The results indicate that while the strategy maintained solid performance during IS, the OOS period showed increased volatility and a decline in the Sharpe ratio, suggesting sensitivity to shifting market regimes. Nonetheless, the LightGBM-based market-timing approach demonstrated resilience, outperforming the Pairs Portfolio in OOS returns while keeping drawdowns at moderate levels.
 
 ---
-
         |                        | Annualized Return | Annual Volatility | Sharpe Ratio | Maximum Drawdown |
         |------------------------|------------------:|------------------:|-------------:|-----------------:|
         | **In-Sample (IS)**     | 8.91%             | 7.96%             | 1.12         | 8.68%            |
@@ -30,6 +28,7 @@ The results indicate that while the strategy maintained solid performance during
 
 From a practical perspective, this study confirms the feasibility of combining machine learning with sector rotation for active portfolio management. It also highlights opportunities for further refinement through enhanced feature engineering, incorporation of transaction cost modeling, and regime detection mechanisms to strengthen real-world applicability.
 
+
 ## Introduction
 
 The financial markets are characterized by continuous shifts in economic cycles, investor sentiment, and sector performance. These dynamics create opportunities for sector rotation strategies, where capital is reallocated among different industries to capture relative strength while mitigating downside risk. Traditionally, such strategies have relied on macroeconomic indicators, moving averages, or momentum signals. However, the increasing availability of high-frequency, multi-dimensional data and advancements in machine learning have opened the door to more adaptive and data-driven approaches.
@@ -37,12 +36,13 @@ This project explores the application of Light Gradient Boosting Machine (LightG
 
 The motivation behind this study lies in bridging the gap between academic research and practical portfolio management. While machine learning-based asset allocation has shown promise in back testing, many approaches suffer from overfitting, lack of robustness in out-of-sample (OOS) periods, or poor adaptability to regime shifts. Our methodology addresses these issues by segmenting the dataset into in-sample (IS) and out-of-sample (OOS) periods for proper validation, applying feature engineering to extract meaningful signals from sector ETF price data, incorporating clustering methods to group similar market conditions and tailor predictions accordingly, and enforcing portfolio constraints to control volatility and drawdown.
 
+
 ## Data Description
 
 The dataset for this project consists of U.S. sector exchange-traded funds (ETFs) that represent key industries within the S&P 500.
 
 | ETF  | Industry               |
-| ---- | ---------------------- |
+|------|------------------------|
 | XLY  | Consumer Discretionary |
 | XLP  | Consumer Staples       |
 | XLE  | Energy                 |
@@ -60,13 +60,13 @@ Table 1. Summary statistics of sector ETFs (in-sample period)
 
 ---
 
-| ETF | AnnReturn | AnnVol   | DownsideVol | Sharpe    | Sortino   | Skew      | Kurtosis  | MDD       | BetaSPY   |
-| --- | --------- | -------- | ----------- | --------- | --------- | --------- | --------- | --------- | --------- |
-| AGG | 0.032881  | 0.031145 | 0.018506    | 1.055730  | 1.776774  | 0.158165  | 1.192040  | -0.035200 | -0.038059 |
-| DBC | -0.069376 | 0.154187 | 0.109620    | -0.449946 | -0.632875 | -0.354556 | -0.044031 | -0.520316 | 0.526838  |
-| EEM | 0.051553  | 0.157677 | 0.085881    | 0.326953  | 0.600284  | 0.198633  | -0.054367 | -0.301646 | 0.947260  |
-| EFA | 0.041978  | 0.115245 | 0.072890    | 0.364247  | 0.575903  | -0.293336 | -0.096126 | -0.187472 | 0.849276  |
-| EWJ | 0.077497  | 0.118039 | 0.087498    | 0.656537  | 0.885706  | -0.445558 | 0.568972  | -0.182909 | 0.794969  |
+| ETF | AnnReturn | AnnVol   | DownsideVol | Sharpe  | Sortino  | Skew     | Kurtosis | MDD      | BetaSPY  |
+|-----|-----------|----------|-------------|---------|----------|----------|----------|----------|----------|
+| AGG | 0.032881  | 0.031145 | 0.018506    | 1.055730| 1.776774 | 0.158165 | 1.192040 | -0.035200| -0.038059|
+| DBC | -0.069376 | 0.154187 | 0.109620    | -0.449946| -0.632875| -0.354556| -0.044031| -0.520316| 0.526838 |
+| EEM | 0.051553  | 0.157677 | 0.085881    | 0.326953| 0.600284 | 0.198633 | -0.054367| -0.301646| 0.947260 |
+| EFA | 0.041978  | 0.115245 | 0.072890    | 0.364247| 0.575903 | -0.293336| -0.096126| -0.187472| 0.849276 |
+| EWJ | 0.077497  | 0.118039 | 0.087498    | 0.656537| 0.885706 | -0.445558| 0.568972 | -0.182909| 0.794969 |
 
 ---
 
@@ -75,6 +75,7 @@ We summarized each sector ETF with risk or return descriptors computed on the tr
 ## Methodology
 
 The methodology for this project follows a systematic process designed to build and evaluate sector rotation strategies using U.S. sector ETFs. The workflow consists of feature engineering, dimensionality reduction, unsupervised clustering, supervised model training, and performance back testing. From the historical daily price series of each ETF, we computed a set of risk and return descriptors to serve as model features which are annualized return, volatility, downside volatility, penalizing negative returns, sharpe ratio, measuring risk-adjusted returns, sortino ratio, focusing on downside risk, skewness of returns distribution, kurtosis of returns distribution, maximum drawdown over the sample period, and beta relative to SPY. These features were computed separately for the in-sample (IS) period and standardized (mean = 0, standard deviation = 1) to remove scale effects. These features were computed separately for the in-sample (IS) period and standardized (mean = 0, standard deviation = 1) to remove scale effects.
+        	
 To address potential multicollinearity among features and to capture the most significant patterns in the dataset, we applied Principal Component Analysis (PCA). The first two principal components were retained, explaining the majority of the variance in the feature space. This reduction simplifies the clustering step and improves computational efficiency while preserving essential information.
 
 <div class="row">
@@ -111,6 +112,7 @@ The performance of the proposed sector rotation strategy was evaluated across bo
 
 Despite the drop in Sharpe ratio during OOS, the LightGBM-based market-timing approach outperformed the Pairs Portfolio benchmark in OOS returns (8.76% vs. 7.35%) while keeping maximum drawdowns at a moderate level (19.64% vs. 16.11%).
 
+  
 <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/k5.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
@@ -124,7 +126,6 @@ Moreover, when compared directly to SPY in the OOS period, the strategy’s exce
 Final Performance Table
 
 ---
-
         | Strategy              | Period | AnnRet | AnnVol |  Sharpe  |   MDD  |
         |----------------------|:------:|-------:|-------:|---------:|-------:|
         | LGBM Market-Timing   |  IS    |  8.91% |  7.96% | 1.118200 |  8.68% |
@@ -133,7 +134,6 @@ Final Performance Table
         | Pairs_Portfolio_RT10%|  OOS   |  7.35% | 10.00% | 0.735072 | 16.11% |
         | SPY_RT10%            |  IS    | 10.48% | 10.00% | 1.048096 | 11.52% |
         | SPY_RT10%            |  OOS   | 11.25% | 10.00% | 1.124576 | 15.40% |
-
 ---
 
 This section presents the performance evaluation of the two proposed strategies—LGBM Market–Timing and Pairs Portfolio—benchmarked against the SPY ETF. The evaluation is conducted over both the in-sample (IS) period (2014–2019) and the out-of-sample (OOS) period (2020–2025). Key metrics include annualized return (AnnRet), annualized volatility (AnnVol), Sharpe ratio, and maximum drawdown (MDD). During the IS period, LGBM Market–Timing achieved an annualized return of 8.91%, paired with the lowest volatility of 7.96% among the three strategies. This resulted in the highest Sharpe ratio 1.12, indicating superior risk-adjusted returns.
