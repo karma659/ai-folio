@@ -28,16 +28,3 @@ The competition taught me valuable lessons about bridging vision with practicali
 From this experience, I also discovered the importance of storytelling in strategy. It was not enough to present a strong business model, we had to demonstrate how Edvance could tangibly transform education while safeguarding human dignity. With a growing global market for AI tutoring we designed a revenue model combining affordable B2C subscriptions with larger B2B institutional contracts ensuring both scalability and accessibility.
 
 Competing against teams from Baruch, Fordham and Rutgers, our team proudly secured third place in the finals. More importantly, I gained the experience of defending ideas before senior leaders and learned how to embed ethics as a foundation for innovation. This competition was not just about winning, it was about shaping a vision for responsible AI in education that I carry into my work today.
-
-
-See below our presentation slide.
-
-
-<div style="margin-left: auto;margin-right: auto;">
-    <object data="../../assets/pdf/Zicklin.pdf" type="application/pdf" width="825px" height="465px">
-        <embed src="../../assets/pdf/Zicklin.pdf">
-            <p>This browser does not support PDFs. Please download the PDF to view it: 
-            <a href="../../assets/pdf/Zicklin.pdf">Download PDF</a>.</p>
-        </embed>
-    </object>
-</div>

@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: desktop
 title: about
 permalink: /
 subtitle: 
