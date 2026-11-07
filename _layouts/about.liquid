@@ -63,6 +63,10 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    {% if page.portfolio_sections %}
+      {% include home_portfolio.liquid %}
+    {% endif %}
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">
