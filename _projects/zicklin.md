@@ -2,7 +2,7 @@
 layout: page
 title: Ethical AI Case Competition
 description: Zicklin Case Competition (conceptualize an AI startup)
-img: assets/img/zicklin.jpeg
+img: assets/img/ethical-ai-education.jpg
 importance: 6
 category: work
 giscus_comments: false
