@@ -1,0 +1,23 @@
+- title: Programming
+  description: The foundation for research and production systems.
+  items: [Python, SQL, JavaScript, C++]
+
+- title: Full-stack development
+  description: Interfaces and services that make data useful.
+  items: [React, Node.js, Express.js, REST APIs, HTML & CSS]
+
+- title: Data & machine learning
+  description: Turning raw data into models and interpretable signals.
+  items: [NumPy, pandas, scikit-learn, LightGBM, NLP]
+
+- title: Quantitative research
+  description: From market hypotheses to portfolio decisions.
+  items: [Alpha research, Backtesting, Portfolio optimization, Factor modeling, Risk analytics]
+
+- title: Cloud & databases
+  description: Infrastructure for reliable applications and data pipelines.
+  items: [AWS (EC2 / S3 / ALB), PostgreSQL, MariaDB, MySQL, Redis, Docker, Git, Linux]
+
+- title: Mathematics & statistics
+  description: Methods for reasoning about uncertainty and financial data.
+  items: [Probability, Regression, Time-series modeling, Numerical methods, Clustering]

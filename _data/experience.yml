@@ -1,0 +1,39 @@
+- company: AIMPaaS
+  url: https://www.aimpaas.com/aboutus.html
+  role: Software Programmer
+  period: Oct 2025 – May 2026
+  location: New York, NY
+  highlights:
+    - Built resilient cloud systems for live portfolio and market data.
+    - Converted large operational logs into searchable records for monitoring.
+  technologies: [Python, SQL, AWS, MariaDB, Redis]
+
+- company: FBN Securities
+  url: https://www.fbnsecurities.com/
+  role: Developer Intern
+  period: Sep 2025 – May 2026
+  location: New York, NY
+  highlights:
+    - Turned earnings calls into structured signals for investment research.
+    - Built analyst tools to explore, annotate, and compare company insights.
+  technologies: [React, Node.js, PostgreSQL, OpenAI, Whisper]
+
+- company: WorldQuant
+  url: https://www.worldquant.com/brain/
+  role: Research Consultant
+  period: Apr 2025 – Aug 2025
+  location: New York, NY
+  highlights:
+    - Researched and backtested equity signals across US, EMEA, and APAC markets.
+    - Tested market hypotheses with systematic, out-of-sample validation.
+  technologies: [Python, Alpha research, Backtesting, Risk analytics]
+
+- company: Goprac
+  url: https://goprac.com/
+  role: Software Engineer
+  period: Jun 2023 – Apr 2024
+  location: Bengaluru, India
+  highlights:
+    - Automated interview-assessment workflows and back-end data operations.
+    - Integrated AI-powered feedback to support personalized skill assessments.
+  technologies: [JavaScript, PHP, Python, MySQL, AWS]

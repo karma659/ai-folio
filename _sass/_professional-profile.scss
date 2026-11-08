@@ -1,0 +1,209 @@
+/* Skills and experience share the portfolio's existing color theme. */
+.professional-page {
+  margin-bottom: 2.5rem;
+
+  .profile-intro {
+    max-width: 66ch;
+    margin: -0.25rem 0 2rem;
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+
+  .profile-eyebrow {
+    display: block;
+    margin-bottom: 0.7rem;
+    color: var(--global-theme-color);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .profile-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      max-width: 100%;
+      padding: 0.3rem 0.65rem;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 6px;
+      background: rgba(38, 152, 186, 0.06);
+      font-size: 0.78rem;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .skill-card,
+  .experience-card {
+    min-width: 0;
+    padding: 1.4rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 10px;
+    background: var(--global-card-bg-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.035);
+  }
+
+  .skill-card h2 {
+    margin: 0 0 0.6rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .skill-description {
+    margin: 0 0 1.1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.85;
+  }
+
+  .experience-timeline {
+    margin: 0 0 1.75rem 0.35rem;
+    padding: 0 0 0 1.65rem;
+    border-left: 1px solid var(--global-divider-color);
+    list-style: none;
+  }
+
+  .experience-entry {
+    position: relative;
+    margin-bottom: 1.15rem;
+
+    &::before {
+      position: absolute;
+      top: 1.8rem;
+      left: -1.97rem;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--global-theme-color);
+      box-shadow: 0 0 0 5px var(--global-bg-color);
+      content: "";
+    }
+  }
+
+  .experience-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    h2 {
+      margin: 0 0 0.25rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--global-theme-color);
+      outline-offset: 4px;
+    }
+  }
+
+  .experience-role {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  .experience-meta {
+    flex-shrink: 0;
+    text-align: right;
+    font-size: 0.8rem;
+    line-height: 1.6;
+
+    p {
+      margin: 0;
+    }
+
+    .experience-period {
+      margin-bottom: 0.2rem;
+      font-weight: 500;
+    }
+  }
+
+  .experience-highlights {
+    margin: 0 0 1rem;
+    padding-left: 1.1rem;
+    font-size: 0.93rem;
+    line-height: 1.7;
+
+    li + li {
+      margin-top: 0.25rem;
+    }
+
+    li::marker {
+      color: var(--global-theme-color);
+    }
+  }
+
+  .teaching-note {
+    margin-left: 2rem;
+    padding: 0.25rem 0 0.25rem 1.25rem;
+    border-left: 2px solid var(--global-theme-color);
+
+    h2 {
+      margin: 0 0 0.4rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0.25rem 0;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .professional-page .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575px) {
+  .professional-page {
+    .skills-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .experience-timeline {
+      padding-left: 1.05rem;
+    }
+
+    .experience-entry::before {
+      left: -1.37rem;
+    }
+
+    .experience-heading {
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .experience-meta {
+      text-align: left;
+    }
+
+    .experience-card,
+    .skill-card {
+      padding: 1.15rem;
+    }
+
+    .teaching-note {
+      margin-left: 1.4rem;
+    }
+  }
+}
