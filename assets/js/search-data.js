@@ -56,6 +56,11 @@ ninja.data = [{
           description: "Full-stack e-commerce website",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/Ecom_App/";
+            },},{id: "projects-doctor-appointment-booking",
+          title: 'Doctor Appointment Booking',
+          description: "A MERN appointment-booking app with patient, doctor, and admin dashboards.",
+          section: "Projects",handler: () => {
+              window.location.href = "/ai-folio/projects/doctor-appointments/";
             },},{id: "projects-interactive-portfolio-optimizer-dashboard",
           title: 'Interactive Portfolio Optimizer Dashboard',
           description: "A Modern Portfolio Theory dashboard comparing four allocation strategies with practical constraints, Monte Carlo simulation, and synchronized risk visualizations.",
@@ -71,6 +76,11 @@ ninja.data = [{
           description: "The model uses the Sharpe Ratio as the objective function and optimizes asset allocation via the SLSQP algorithm.",
           section: "Projects",handler: () => {
               window.location.href = "/ai-folio/projects/portfolio/";
+            },},{id: "projects-nlp-product-recommendation-system",
+          title: 'NLP Product Recommendation System',
+          description: "A content-based apparel recommender using Bag-of-Words and TF-IDF to find similar products.",
+          section: "Projects",handler: () => {
+              window.location.href = "/ai-folio/projects/product-recommendations/";
             },},{id: "projects-trading-the-signature-of-informed-money",
           title: 'Trading the Signature of Informed Money',
           description: "Three behavioral hypotheses turned into trading signals, with positive out-of-sample returns from 2018 to 2023.",
