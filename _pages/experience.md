@@ -4,6 +4,7 @@ title: experience
 permalink: /experience/
 nav: true
 nav_order: 1
+compact_experience: true
 ---
 
 <div class="professional-page">

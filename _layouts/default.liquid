@@ -16,7 +16,7 @@
   </head>
 
   <!-- Body -->
-  <body class="tech-portfolio {% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body class="tech-portfolio {% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %} {% if page.compact_experience %}experience-view{% endif %}">
     <!-- Header -->
     {% include header.liquid %}
 
