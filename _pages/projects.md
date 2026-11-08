@@ -7,6 +7,13 @@ nav: true
 nav_order: 3
 display_categories: 
 horizontal: false
+_styles: |
+  @media (min-width: 768px) {
+    .projects .projects-grid.row-cols-md-3 > .col {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+  }
 ---
 
 
@@ -30,7 +37,7 @@ horizontal: false
     </div>
   </div>
   {% else %}
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 projects-grid">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 projects-grid">
     {% for project in sorted_projects %}
       {% include projects.liquid %}
     {% endfor %}
@@ -56,7 +63,7 @@ horizontal: false
     </div>
   </div>
   {% else %}
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 projects-grid">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 projects-grid">
     {% for project in sorted_projects %}
       {% include projects.liquid %}
     {% endfor %}
