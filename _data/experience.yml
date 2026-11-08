@@ -37,3 +37,13 @@
     - Automated interview-assessment workflows and back-end data operations.
     - Integrated AI-powered feedback to support personalized skill assessments.
   technologies: [JavaScript, PHP, Python, MySQL, AWS]
+
+- company: Celebal Technologies
+  url: https://www.celebaltech.com/
+  role: Associate
+  period: Jul 2022 – Jan 2023
+  location: Jaipur, India
+  highlights:
+    - Applied machine learning and NLP to extract insights from unstructured data.
+    - Improved feature engineering and validation for production data workflows.
+  technologies: [Python, NumPy, NLP, Excel, Node.js, Git]

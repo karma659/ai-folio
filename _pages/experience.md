@@ -10,7 +10,7 @@ compact_experience: true
 <div class="professional-page">
   <p class="profile-intro">Building reliable financial systems, investment research tools, and quantitative strategies.</p>
 
-  <ol class="experience-timeline" aria-label="Professional experience, most recent first">
+  <ol class="experience-timeline" aria-label="Professional and teaching experience">
     {% for position in site.data.experience %}
     <li class="experience-entry">
       <article class="experience-card" aria-labelledby="role-{{ forloop.index }}">
@@ -37,12 +37,13 @@ compact_experience: true
       </article>
     </li>
     {% endfor %}
+    <li class="experience-entry">
+      <aside class="experience-card teaching-card" aria-labelledby="teaching-title">
+        <span class="profile-eyebrow">Teaching</span>
+        <h2 id="teaching-title">Python at Baruch</h2>
+        <p>Graduate Teaching Assistant · Zicklin School of Business</p>
+        <p>Helping students build practical Python skills.</p>
+      </aside>
+    </li>
   </ol>
-
-  <aside class="teaching-note" aria-labelledby="teaching-title">
-    <span class="profile-eyebrow">Teaching</span>
-    <h2 id="teaching-title">Python at Baruch</h2>
-    <p>Graduate Teaching Assistant · Zicklin School of Business</p>
-    <p>Helping students build practical Python skills.</p>
-  </aside>
 </div>
