@@ -39,7 +39,7 @@ compact_experience: true
     {% endfor %}
     <li class="experience-entry">
       <aside class="experience-card teaching-card" aria-labelledby="teaching-title">
-        <span class="profile-eyebrow">Teaching</span>
+        <span class="profile-eyebrow">TA</span>
         <h2 id="teaching-title">Python at Baruch</h2>
         <p>Graduate Teaching Assistant · Zicklin School of Business</p>
         <p>Helping students build practical Python skills.</p>
