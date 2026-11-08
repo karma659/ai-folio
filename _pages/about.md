@@ -26,7 +26,7 @@ Before that , I worked as a Software Engineer at [Goprac](https://goprac.com/), 
 
 Currently, I’m pursuing  MS in Finance at [Baruch College (Zicklin School of Business)](https://www.baruch.cuny.edu/), where I combine finance and coding to solve real-world investment problems ⚡.
 
-I ❤️ applying code to finance. I am currently a Graduate Teaching Assistant for Python Courses @ [Zicklin School of Business](https://zicklin.baruch.cuny.edu/).
+I enjoy applying code to finance. I am currently a Graduate Teaching Assistant for Python Courses @ [Zicklin School of Business](https://zicklin.baruch.cuny.edu/).
 
 Check out my [projects](/ai-folio/projects/) page for project writeups and my experience as an IQC national finalist 🚀.
 
