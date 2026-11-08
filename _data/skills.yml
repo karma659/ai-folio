@@ -4,7 +4,7 @@
 
 - title: Full-stack development
   description: Interfaces and services that make data useful.
-  items: [React, Node.js, Express.js, REST APIs, HTML & CSS]
+  items: [React, Node.js, Express.js, REST APIs, PHP]
 
 - title: Data & machine learning
   description: Turning raw data into models and interpretable signals.
